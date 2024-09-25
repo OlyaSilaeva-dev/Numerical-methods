@@ -1,0 +1,3 @@
+/mnt/c/src/GitHub/CM/build/CMakeFiles/CM.dir
+/mnt/c/src/GitHub/CM/build/CMakeFiles/edit_cache.dir
+/mnt/c/src/GitHub/CM/build/CMakeFiles/rebuild_cache.dir
