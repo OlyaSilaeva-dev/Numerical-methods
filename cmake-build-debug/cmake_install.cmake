@@ -1,4 +1,4 @@
-# Install script for directory: C:/src/GitHub/CM
+# Install script for directory: C:/src/GitHub/Numerical-methods
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/src/GitHub/CM/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/src/GitHub/Numerical-methods/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

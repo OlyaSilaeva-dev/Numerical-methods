@@ -7,6 +7,7 @@
 
 using namespace std;
 
+constexpr const double EPS = 10e-9;
 
 void print_matrix(vector<vector<double>> &matrix) {
     size_t n = matrix.size();
@@ -28,6 +29,13 @@ vector<double> Method_Progonki(vector<vector<double>> &matrix, vector<double> &r
     double c1 = matrix[0][1];
     double d1 = result[0];
 
+    if (abs(b1) < abs(c1)) {
+        throw logic_error("Stability check failed!!!");
+    }
+
+    if (b1 > -EPS && b1 < EPS) {
+        throw logic_error("Division by zero!!!");
+    }
     P[0] = -c1 / b1;
     Q[0] = d1 / b1;
 
@@ -37,16 +45,36 @@ vector<double> Method_Progonki(vector<vector<double>> &matrix, vector<double> &r
         double ci = matrix[i][i + 1];
         double di = result[i];
 
-        P[i] = -ci / (bi + ai * P[i-1]);
-        Q[i] = (di - ai * Q[i-1]) / (bi + ai * P[i-1]);
+        if ((abs(bi) < abs(ai) + abs(ci)) || (ai == 0) || (ci == 0)) {
+            throw logic_error("Stability check failed");
+        }
+
+        double expression = bi + ai * P[i-1];
+        if(expression > -EPS && expression < EPS) {
+            throw logic_error("Division by zero!!!");
+        }
+
+        P[i] = -ci / expression;
+        if (abs(P[i]) > 1) {
+            throw logic_error("Stability check failed");
+        }
+
+        Q[i] = (di - ai * Q[i-1]) / expression;
     }
 
     double dn = result[n-1];
     double an = matrix[n-1][n-2];
     double bn = matrix[n-1][n-1];
+    if (abs(bn) < abs(an)) {
+        throw logic_error("Stability check failed");
+    }
 
     P[n-1] = 0;
-    Q[n-1] = (dn - an * Q[n-2]) / (bn + an * P[n-2]);
+    double tmp = bn + an * P[n-2];
+    if (tmp < EPS && tmp > -EPS) {
+        throw logic_error("Division by zero!!!");
+    }
+    Q[n-1] = (dn - an * Q[n-2]) / tmp;
 
     //обратный ход
     vector<double> x(n, 0);
@@ -136,7 +164,7 @@ void input_all(string const & file_name, vector<vector<double>> &input_matrix, v
 int main(int argc, char * argv[]) {
 
 //    filesystem::current_path("/mnt/c/src/GitHub/CM");
-    filesystem::current_path("C:/src/GitHub/CM");
+    filesystem::current_path("C:/src/GitHub/Numerical-methods");
 //    std::string file_name(argv[1]);
     std::string file_name("test.txt");
 

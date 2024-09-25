@@ -777,8 +777,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/src/GitHub/CM/cmake-build-debug",
-		"source" : "C:/src/GitHub/CM"
+		"build" : "C:/src/GitHub/Numerical-methods/cmake-build-debug",
+		"source" : "C:/src/GitHub/Numerical-methods"
 	},
 	"version" : 
 	{
