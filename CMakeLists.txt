@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
-project(CM)
+project(cm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CM main.cpp)
+add_subdirectory(lab1-Progonka)
+

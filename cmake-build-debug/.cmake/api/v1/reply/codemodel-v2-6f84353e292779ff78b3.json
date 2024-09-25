@@ -6,13 +6,28 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.25"
 					},
 					"projectIndex" : 0,
-					"source" : ".",
+					"source" : "."
+				},
+				{
+					"build" : "lab1-Progonka",
+					"jsonFile" : "directory-lab1-Progonka-Debug-66ceb9e627d550e3f6fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab1-Progonka",
 					"targetIndexes" : 
 					[
 						0
@@ -25,9 +40,10 @@
 				{
 					"directoryIndexes" : 
 					[
-						0
+						0,
+						1
 					],
-					"name" : "CM",
+					"name" : "cm",
 					"targetIndexes" : 
 					[
 						0
@@ -37,10 +53,10 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 0,
-					"id" : "CM::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CM-Debug-24152ec410d94ea00dfb.json",
-					"name" : "CM",
+					"directoryIndex" : 1,
+					"id" : "cm_progonka_test::@970dd317df5596954edf",
+					"jsonFile" : "target-cm_progonka_test-Debug-325dc6d672ab31802527.json",
+					"name" : "cm_progonka_test",
 					"projectIndex" : 0
 				}
 			]

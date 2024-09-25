@@ -1,7 +1,12 @@
 # ninja log v5
-3	1117	7489934519751992	CMakeFiles/CM.dir/main.cpp.obj	f9efafc570537f02
-1118	1301	7489934521565031	CM.exe	ecb5170cefb85560
-4	1161	7489970912157396	CMakeFiles/CM.dir/main.cpp.obj	f380707f94dd3c4b
-1161	1367	7489970914187419	CM.exe	ecb5170cefb85560
 2	902	7489971388488925	CMakeFiles/CM.dir/main.cpp.obj	f380707f94dd3c4b
+1	147	7489977982161415	build.ninja	cc54bc30d92df025
+0	851	7489977891875396	lab1-Progonka/CMakeFiles/cm_progonka_test.dir/test.cpp.obj	a04ecf77eafefe6c
+852	1016	7489977893501287	lab1-Progonka/cm_progonka_test.exe	215c351ec390e2c1
 902	1089	7489971390342063	CM.exe	ecb5170cefb85560
+2	875	7489978295663531	lab1-Progonka/CMakeFiles/cm_progonka_test.dir/test.cpp.obj	a04ecf77eafefe6c
+875	1040	7489978297305445	lab1-Progonka/cm_progonka_test.exe	215c351ec390e2c1
+3	884	7489978666990275	lab1-Progonka/CMakeFiles/cm_progonka_test.dir/test.cpp.obj	a04ecf77eafefe6c
+885	1058	7489978668702345	lab1-Progonka/cm_progonka_test.exe	215c351ec390e2c1
+3	844	7489979678247760	lab1-Progonka/CMakeFiles/cm_progonka_test.dir/test.cpp.obj	a04ecf77eafefe6c
+844	1011	7489979679895428	lab1-Progonka/cm_progonka_test.exe	215c351ec390e2c1
