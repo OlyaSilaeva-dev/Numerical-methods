@@ -28,5 +28,12 @@ int main(int argc, char * argv[]) {
     cout.precision(6);
     cout << det << endl;
 
+
+    bool check = CheckCorrectAnswer(matrix, result, result_operation);
+    if (check) {
+        cout << "\nCORRECT" << endl;
+    } else {
+        cout << "\nWRONG" << endl;
+    }
     return 0;
 }

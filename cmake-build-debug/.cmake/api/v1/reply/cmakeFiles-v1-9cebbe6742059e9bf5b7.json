@@ -147,6 +147,12 @@
 		},
 		{
 			"path" : "lab1-Progonka/CMakeLists.txt"
+		},
+		{
+			"path" : "lab2-Gaus/CMakeLists.txt"
+		},
+		{
+			"path" : "matrix/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

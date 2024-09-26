@@ -18,8 +18,9 @@ constexpr const double EPS = 10e-9;
 
 void print_matrix(vector<vector<double>> &matrix) {
     size_t n = matrix.size();
+    size_t m = matrix[0].size();
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < m; j++) {
             cout << matrix[i][j] << " ";
         }
         cout << endl;
@@ -127,6 +128,20 @@ double determinant(vector<vector<double>> matrix, uint32_t n) {
         }
         return det;
     }
+}
+
+bool CheckCorrectAnswer(vector<vector<double>> &matrix, vector<double> b, vector<double> result) {
+    int n = matrix.size();
+    for(int i = 0; i < n; i++) {
+        double b_i = 0;
+        for(int j = 0; j < n; j++) {
+            b_i += result[j] * matrix[i][j];
+        }
+        if (abs(b_i - b[i]) > EPS) {
+            return false;
+        }
+    }
+    return true;
 }
 
 void input_all(string const & file_name, vector<vector<double>> &input_matrix, vector<double> &input_result) {

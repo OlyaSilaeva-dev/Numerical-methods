@@ -3,3 +3,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab1-Progonka/CMakeFiles/cm_progonka_test.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab1-Progonka/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab1-Progonka/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab2-Gaus/CMakeFiles/cm_gaus_test.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab2-Gaus/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab2-Gaus/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/STATIC.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir

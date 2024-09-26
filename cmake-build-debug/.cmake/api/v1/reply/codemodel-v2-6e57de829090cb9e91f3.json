@@ -8,7 +8,9 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2,
+						3
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -30,6 +32,36 @@
 					"source" : "lab1-Progonka",
 					"targetIndexes" : 
 					[
+						2
+					]
+				},
+				{
+					"build" : "lab2-Gaus",
+					"jsonFile" : "directory-lab2-Gaus-Debug-acfc56b97a948ecb423c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab2-Gaus",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "matrix",
+					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "matrix",
+					"targetIndexes" : 
+					[
 						0
 					]
 				}
@@ -41,17 +73,35 @@
 					"directoryIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3
 					],
 					"name" : "cm",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 3,
+					"id" : "STATIC::@23c283fdd1b78e1a8728",
+					"jsonFile" : "target-STATIC-Debug-d14f9582452893522d55.json",
+					"name" : "STATIC",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cm_gaus_test::@03dec05e6762ff44b7f9",
+					"jsonFile" : "target-cm_gaus_test-Debug-77207e47ecbc1aca0216.json",
+					"name" : "cm_gaus_test",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 1,
 					"id" : "cm_progonka_test::@970dd317df5596954edf",
