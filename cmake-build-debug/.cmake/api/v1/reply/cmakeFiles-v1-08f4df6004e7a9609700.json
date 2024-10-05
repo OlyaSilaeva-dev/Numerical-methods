@@ -153,6 +153,9 @@
 		},
 		{
 			"path" : "matrix/CMakeLists.txt"
+		},
+		{
+			"path" : "matrix/test/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

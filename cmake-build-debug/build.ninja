@@ -136,11 +136,12 @@ build lab1-Progonka/rebuild_cache: phony lab1-Progonka/CMakeFiles/rebuild_cache.
 #############################################
 # Order-only phony target for cm_gaus_test
 
-build cmake_object_order_depends_target_cm_gaus_test: phony || lab2-Gaus/CMakeFiles/cm_gaus_test.dir
+build cmake_object_order_depends_target_cm_gaus_test: phony || cmake_object_order_depends_target_matrix
 
 build lab2-Gaus/CMakeFiles/cm_gaus_test.dir/test.cpp.obj: CXX_COMPILER__cm_gaus_test_Debug C$:/src/GitHub/Numerical-methods/lab2-Gaus/test.cpp || cmake_object_order_depends_target_cm_gaus_test
   DEP_FILE = lab2-Gaus\CMakeFiles\cm_gaus_test.dir\test.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/src/GitHub/Numerical-methods/lab2-Gaus/../matrix
   OBJECT_DIR = lab2-Gaus\CMakeFiles\cm_gaus_test.dir
   OBJECT_FILE_DIR = lab2-Gaus\CMakeFiles\cm_gaus_test.dir
 
@@ -152,9 +153,9 @@ build lab2-Gaus/CMakeFiles/cm_gaus_test.dir/test.cpp.obj: CXX_COMPILER__cm_gaus_
 #############################################
 # Link the executable lab2-Gaus\cm_gaus_test.exe
 
-build lab2-Gaus/cm_gaus_test.exe: CXX_EXECUTABLE_LINKER__cm_gaus_test_Debug lab2-Gaus/CMakeFiles/cm_gaus_test.dir/test.cpp.obj
+build lab2-Gaus/cm_gaus_test.exe: CXX_EXECUTABLE_LINKER__cm_gaus_test_Debug lab2-Gaus/CMakeFiles/cm_gaus_test.dir/test.cpp.obj | matrix/libmatrix.a || matrix/libmatrix.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = matrix/libmatrix.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lab2-Gaus\CMakeFiles\cm_gaus_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -191,35 +192,35 @@ build lab2-Gaus/rebuild_cache: phony lab2-Gaus/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target STATIC
+# Object build statements for STATIC_LIBRARY target matrix
 
 
 #############################################
-# Order-only phony target for STATIC
+# Order-only phony target for matrix
 
-build cmake_object_order_depends_target_STATIC: phony || matrix/CMakeFiles/STATIC.dir
+build cmake_object_order_depends_target_matrix: phony || matrix/CMakeFiles/matrix.dir
 
-build matrix/CMakeFiles/STATIC.dir/matrix.cpp.obj: CXX_COMPILER__STATIC_Debug C$:/src/GitHub/Numerical-methods/matrix/matrix.cpp || cmake_object_order_depends_target_STATIC
-  DEP_FILE = matrix\CMakeFiles\STATIC.dir\matrix.cpp.obj.d
+build matrix/CMakeFiles/matrix.dir/matrix.cpp.obj: CXX_COMPILER__matrix_Debug C$:/src/GitHub/Numerical-methods/matrix/matrix.cpp || cmake_object_order_depends_target_matrix
+  DEP_FILE = matrix\CMakeFiles\matrix.dir\matrix.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = matrix\CMakeFiles\STATIC.dir
-  OBJECT_FILE_DIR = matrix\CMakeFiles\STATIC.dir
+  OBJECT_DIR = matrix\CMakeFiles\matrix.dir
+  OBJECT_FILE_DIR = matrix\CMakeFiles\matrix.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target STATIC
+# Link build statements for STATIC_LIBRARY target matrix
 
 
 #############################################
-# Link the static library matrix\libSTATIC.a
+# Link the static library matrix\libmatrix.a
 
-build matrix/libSTATIC.a: CXX_STATIC_LIBRARY_LINKER__STATIC_Debug matrix/CMakeFiles/STATIC.dir/matrix.cpp.obj
+build matrix/libmatrix.a: CXX_STATIC_LIBRARY_LINKER__matrix_Debug matrix/CMakeFiles/matrix.dir/matrix.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = matrix\CMakeFiles\STATIC.dir
+  OBJECT_DIR = matrix\CMakeFiles\matrix.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = matrix\libSTATIC.a
-  TARGET_PDB = STATIC.a.dbg
+  TARGET_FILE = matrix\libmatrix.a
+  TARGET_PDB = matrix.a.dbg
 
 
 #############################################
@@ -245,9 +246,69 @@ build matrix/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build matrix/rebuild_cache: phony matrix/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Target aliases.
+# Write statements declared in CMakeLists.txt:
+# C:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt
+# =============================================================================
 
-build STATIC: phony matrix/libSTATIC.a
+# =============================================================================
+# Object build statements for EXECUTABLE target matrix_test
+
+
+#############################################
+# Order-only phony target for matrix_test
+
+build cmake_object_order_depends_target_matrix_test: phony || cmake_object_order_depends_target_matrix
+
+build matrix/test/CMakeFiles/matrix_test.dir/test_matrix.cpp.obj: CXX_COMPILER__matrix_test_Debug C$:/src/GitHub/Numerical-methods/matrix/test/test_matrix.cpp || cmake_object_order_depends_target_matrix_test
+  DEP_FILE = matrix\test\CMakeFiles\matrix_test.dir\test_matrix.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/src/GitHub/Numerical-methods/matrix/test/../../matrix
+  OBJECT_DIR = matrix\test\CMakeFiles\matrix_test.dir
+  OBJECT_FILE_DIR = matrix\test\CMakeFiles\matrix_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target matrix_test
+
+
+#############################################
+# Link the executable matrix\test\matrix_test.exe
+
+build matrix/test/matrix_test.exe: CXX_EXECUTABLE_LINKER__matrix_test_Debug matrix/test/CMakeFiles/matrix_test.dir/test_matrix.cpp.obj | matrix/libmatrix.a || matrix/libmatrix.a
+  FLAGS = -g
+  LINK_LIBRARIES = matrix/libmatrix.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = matrix\test\CMakeFiles\matrix_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = matrix\test\matrix_test.exe
+  TARGET_IMPLIB = matrix\test\libmatrix_test.dll.a
+  TARGET_PDB = matrix_test.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build matrix/test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\src\GitHub\Numerical-methods\cmake-build-debug\matrix\test && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build matrix/test/edit_cache: phony matrix/test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build matrix/test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\src\GitHub\Numerical-methods\cmake-build-debug\matrix\test && "C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\src\GitHub\Numerical-methods -BC:\src\GitHub\Numerical-methods\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build matrix/test/rebuild_cache: phony matrix/test/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
 
 build cm_gaus_test: phony lab2-Gaus/cm_gaus_test.exe
 
@@ -257,7 +318,13 @@ build cm_progonka_test: phony lab1-Progonka/cm_progonka_test.exe
 
 build cm_progonka_test.exe: phony lab1-Progonka/cm_progonka_test.exe
 
-build libSTATIC.a: phony matrix/libSTATIC.a
+build libmatrix.a: phony matrix/libmatrix.a
+
+build matrix: phony matrix/libmatrix.a
+
+build matrix_test: phony matrix/test/matrix_test.exe
+
+build matrix_test.exe: phony matrix/test/matrix_test.exe
 
 # =============================================================================
 # Folder targets.
@@ -288,7 +355,14 @@ build lab2-Gaus/all: phony lab2-Gaus/cm_gaus_test.exe
 #############################################
 # Folder: C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix
 
-build matrix/all: phony matrix/libSTATIC.a
+build matrix/all: phony matrix/libmatrix.a matrix/test/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/test
+
+build matrix/test/all: phony matrix/test/matrix_test.exe
 
 # =============================================================================
 # Built-in targets
@@ -297,14 +371,14 @@ build matrix/all: phony matrix/libSTATIC.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.1.3/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeRCCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################

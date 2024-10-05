@@ -1,15 +1,16 @@
 #include <fstream>
 #include <sstream>
 #include "matrix.h"
+#include "iostream"
 
-
-matrix::matrix(const vector<vector<double>> &other_matrix) {
+matrix::matrix(const vector<vector<double>> &other_matrix) { //конструктор
     this->_matrix = other_matrix;
     this->lines = (int)other_matrix.size();
     this->columns = (int)other_matrix[0].size();
 }
 
-void matrix::input_from_file(ifstream &fin, matrix &matrix1) {
+matrix &matrix::input_from_file(std::ifstream &fin) { //считывает матрицу из файла
+    matrix result;
     std::string line;
     while (true) {
         if (!getline(fin, line)) break;
@@ -24,13 +25,15 @@ void matrix::input_from_file(ifstream &fin, matrix &matrix1) {
         vector<double> line_vector;
         double a;
         while (line_str >> a) line_vector.push_back(a);
-        matrix1._matrix.push_back(line_vector);
+        result._matrix.push_back(line_vector);
     }
-    matrix1.lines = (int)matrix1._matrix.size();
-    matrix1.columns = (int)matrix1._matrix[0].size();
+    result.lines = (int)result._matrix.size();
+    result.columns = (int)result._matrix[0].size();
+    (*this) = result;
+    return *this;
 }
 
-matrix &matrix::operator*(const matrix &other) {
+matrix &matrix::operator*(const matrix &other) { //оператор *
     int n1 = this->lines;
     int m1 = this->columns;
     int n2 = other.lines;
@@ -55,27 +58,46 @@ matrix &matrix::operator*(const matrix &other) {
     return *this;
 }
 
-matrix &matrix::change_lines(int line1, int line2) {
+matrix &matrix::change_lines(int line1, int line2) { //меняет местами две линии
     int n = this->lines;
     vector<vector<double>> p(n, vector<double>(n, 0));
 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
-            if (i == line2) {
+            if (i == (line1)) {
+                p[i][j] = (j == (line2)) ? 1: 0;
+            } else if (i == line2) {
                 p[i][j] = (j == line1) ? 1: 0;
-            } else if (i == line1) {
-                p[i][j] = (j == line2) ? 1: 0;
             } else {
                 p[i][j] = (j == i) ? 1: 0;
             }
         }
     }
     matrix p1(p);
+//    std::cout << p1 << std::endl;
 
     auto result = p1 * (*this);
     *this = result;
     return *this;
 }
+
+std::ostream &operator<<(ostream &out, const matrix &_matrix1) {
+
+    for (int i = 0; i < _matrix1.lines; i++) {
+        for (int j = 0; j < _matrix1.columns; j++) {
+            out << _matrix1._matrix[i][j] << " ";
+        }
+        out << "\n";
+    }
+    return out;
+}
+
+matrix::matrix() {
+    this->_matrix = vector<vector<double>> ();
+    this->lines = 0;
+    this->columns = 0;
+}
+
 
 
 

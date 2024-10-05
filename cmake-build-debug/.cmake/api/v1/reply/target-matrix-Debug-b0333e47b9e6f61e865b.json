@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "matrix/libSTATIC.a"
+			"path" : "matrix/libmatrix.a"
 		}
 	],
 	"backtrace" : 1,
@@ -54,9 +54,9 @@
 			]
 		}
 	],
-	"id" : "STATIC::@23c283fdd1b78e1a8728",
-	"name" : "STATIC",
-	"nameOnDisk" : "libSTATIC.a",
+	"id" : "matrix::@23c283fdd1b78e1a8728",
+	"name" : "matrix",
+	"nameOnDisk" : "libmatrix.a",
 	"paths" : 
 	{
 		"build" : "matrix",

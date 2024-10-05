@@ -32,7 +32,7 @@
 					"source" : "lab1-Progonka",
 					"targetIndexes" : 
 					[
-						2
+						1
 					]
 				},
 				{
@@ -47,11 +47,15 @@
 					"source" : "lab2-Gaus",
 					"targetIndexes" : 
 					[
-						1
+						0
 					]
 				},
 				{
 					"build" : "matrix",
+					"childIndexes" : 
+					[
+						4
+					],
 					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
 					"minimumCMakeVersion" : 
 					{
@@ -62,7 +66,22 @@
 					"source" : "matrix",
 					"targetIndexes" : 
 					[
-						0
+						2
+					]
+				},
+				{
+					"build" : "matrix/test",
+					"jsonFile" : "directory-matrix.test-Debug-259cc2ecfdcd7c0823b6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "matrix/test",
+					"targetIndexes" : 
+					[
+						3
 					]
 				}
 			],
@@ -75,30 +94,25 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "cm",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 3,
-					"id" : "STATIC::@23c283fdd1b78e1a8728",
-					"jsonFile" : "target-STATIC-Debug-d14f9582452893522d55.json",
-					"name" : "STATIC",
-					"projectIndex" : 0
-				},
-				{
 					"directoryIndex" : 2,
 					"id" : "cm_gaus_test::@03dec05e6762ff44b7f9",
-					"jsonFile" : "target-cm_gaus_test-Debug-77207e47ecbc1aca0216.json",
+					"jsonFile" : "target-cm_gaus_test-Debug-3fc34adc336f0ad2bc21.json",
 					"name" : "cm_gaus_test",
 					"projectIndex" : 0
 				},
@@ -107,6 +121,20 @@
 					"id" : "cm_progonka_test::@970dd317df5596954edf",
 					"jsonFile" : "target-cm_progonka_test-Debug-325dc6d672ab31802527.json",
 					"name" : "cm_progonka_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "matrix::@23c283fdd1b78e1a8728",
+					"jsonFile" : "target-matrix-Debug-b0333e47b9e6f61e865b.json",
+					"name" : "matrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "matrix_test::@3c457d132e73201f9a12",
+					"jsonFile" : "target-matrix_test-Debug-00164ed2eefda791c7b8.json",
+					"name" : "matrix_test",
 					"projectIndex" : 0
 				}
 			]

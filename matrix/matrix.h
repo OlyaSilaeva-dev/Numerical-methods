@@ -14,6 +14,8 @@ private:
     int columns;
 
 public:
+    explicit matrix();
+
     explicit matrix(vector<vector<double>> const &other_matrix);
 
     ~matrix() = default;
@@ -28,7 +30,9 @@ public:
 
 public:
 
-    static void input_from_file(ifstream &fin, matrix &matrix1);
+    matrix &input_from_file(std::ifstream &fin);
+
+    friend  std::ostream& operator<<(std::ostream& out, const matrix &_matrix1);
 
     vector<vector<double>> &get_matrix() {
         return this->_matrix;
