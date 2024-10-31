@@ -1,4 +1,4 @@
-# Install script for directory: C:/src/GitHub/Numerical-methods/lab1-Progonka
+# Install script for directory: C:/src/GitHub/Numerical-methods/lab3-simple_iteration_method
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

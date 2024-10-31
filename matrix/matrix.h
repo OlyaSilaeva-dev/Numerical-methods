@@ -18,15 +18,19 @@ public:
 
     explicit matrix(vector<vector<double>> const &other_matrix);
 
-    ~matrix() = default;
+    explicit matrix(vector<double> &_vector);
+
+    virtual ~matrix() = default;
 
     matrix(matrix const &other) noexcept = default;
 
     matrix(matrix &&other) = default;
 
-    matrix &operator=(matrix const &other) = default;
+    matrix &operator=(matrix const &other);
 
     matrix &operator=(matrix &&other) = default;
+
+    bool operator==(matrix const &other);
 
 public:
 
@@ -46,9 +50,17 @@ public:
         return columns;
     }
 
-    matrix &operator*(matrix const &other);
+    matrix operator*(matrix const &other) const;
+
+    matrix &operator*(std::vector<double> const &_vector);
 
     matrix &change_lines(int line1, int line2);
+
+    vector<double> &operator[](unsigned index);
+
+    matrix operator+(const matrix &other) const;
+
+    matrix operator+(const vector<double> &other) const;
 };
 
 

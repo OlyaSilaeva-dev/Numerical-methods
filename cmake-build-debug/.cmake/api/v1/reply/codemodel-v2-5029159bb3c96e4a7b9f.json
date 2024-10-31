@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -51,10 +52,25 @@
 					]
 				},
 				{
+					"build" : "lab3-simple_iteration_method",
+					"jsonFile" : "directory-lab3-simple_iteration_method-Debug-dcc62e8eacb74bc80db5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab3-simple_iteration_method",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
 					"build" : "matrix",
 					"childIndexes" : 
 					[
-						4
+						5
 					],
 					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
 					"minimumCMakeVersion" : 
@@ -66,7 +82,7 @@
 					"source" : "matrix",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -76,12 +92,12 @@
 					{
 						"string" : "3.25"
 					},
-					"parentIndex" : 3,
+					"parentIndex" : 4,
 					"projectIndex" : 0,
 					"source" : "matrix/test",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				}
 			],
@@ -95,7 +111,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"name" : "cm",
 					"targetIndexes" : 
@@ -103,7 +120,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -125,13 +143,20 @@
 				},
 				{
 					"directoryIndex" : 3,
+					"id" : "cm_simple_iteration_method_test::@68c63ce1249e30b5fb8b",
+					"jsonFile" : "target-cm_simple_iteration_method_test-Debug-787033f1791ac9f7da2b.json",
+					"name" : "cm_simple_iteration_method_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "matrix::@23c283fdd1b78e1a8728",
 					"jsonFile" : "target-matrix-Debug-b0333e47b9e6f61e865b.json",
 					"name" : "matrix",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 4,
+					"directoryIndex" : 5,
 					"id" : "matrix_test::@3c457d132e73201f9a12",
 					"jsonFile" : "target-matrix_test-Debug-00164ed2eefda791c7b8.json",
 					"name" : "matrix_test",
@@ -149,6 +174,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 7
 	}
 }

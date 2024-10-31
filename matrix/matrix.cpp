@@ -2,6 +2,7 @@
 #include <sstream>
 #include "matrix.h"
 #include "iostream"
+double EXP = 1e-9;
 
 matrix::matrix(const vector<vector<double>> &other_matrix) { //конструктор
     this->_matrix = other_matrix;
@@ -33,7 +34,7 @@ matrix &matrix::input_from_file(std::ifstream &fin) { //считывает ма�
     return *this;
 }
 
-matrix &matrix::operator*(const matrix &other) { //оператор *
+matrix matrix::operator*(const matrix &other) const{ //оператор *
     int n1 = this->lines;
     int m1 = this->columns;
     int n2 = other.lines;
@@ -46,7 +47,6 @@ matrix &matrix::operator*(const matrix &other) { //оператор *
 
     for (int i = 0; i < n1; i++) {
         for (int j = 0; j < m2; j++) {
-            result[i][j] = 0;
             for (int p = 0; p < m1; p++) {
                 result[i][j] += this->_matrix[i][p] * other._matrix[p][j];
             }
@@ -54,8 +54,7 @@ matrix &matrix::operator*(const matrix &other) { //оператор *
     }
 
     matrix matrix_result(result);
-    *this = matrix_result;
-    return *this;
+    return matrix_result;
 }
 
 matrix &matrix::change_lines(int line1, int line2) { //меняет местами две линии
@@ -98,8 +97,80 @@ matrix::matrix() {
     this->columns = 0;
 }
 
+bool matrix::operator==(const matrix &other) {
+    if(lines != other.lines || columns != other.columns) return false;
+    for(int i = 0; i < this->lines; i++) {
+        for(int j = 0; j < this->columns; j++) {
+            if(abs(_matrix[i][j] - other._matrix[i][j]) > EXP) return false;
+        }
+    }
+    return true;
+}
 
+matrix::matrix(vector<double> &_vector) {
+    _matrix.push_back(_vector);
+    this->lines = 1;
+    this->columns = _vector.size();
+}
 
+matrix &matrix::operator*(const std::vector<double> &_vector) {
+    matrix matrix_vector(this->_matrix);
+    matrix result;
+    result = *this * matrix_vector;
+    *this = result;
+    std::cout << fixed << result;
+    return *this;
+}
+
+std::vector<double> &matrix::operator[](unsigned index) {
+    return this->_matrix[index];
+}
+
+matrix matrix::operator+(const matrix &other) const{
+    vector<vector<double>> result_v(this->lines, vector<double>(this->columns, 0));
+    matrix result(result_v);
+
+    for (int i = 0; i < this->lines; i++) {
+        for (int j = 0; j < this->columns; j++) {
+            result[i][j] = this->_matrix[i][j] + other._matrix[i][j];
+        }
+    }
+
+    return result;
+}
+
+matrix matrix::operator+(const vector<double> &other) const {
+    if (this->columns != 1 && other.size() != this->lines) {
+        throw runtime_error("not equal size! Can`t add up!");
+    }
+
+    vector<vector<double>> result_v(this->lines, vector<double>(this->columns, 0));
+    matrix result(result_v);
+
+    for (int i = 0; i < this->lines; i++) {
+       result[i][0] = this->_matrix[i][0] + (other)[i];
+    }
+
+    return matrix();
+}
+
+matrix &matrix::operator=(const matrix &other) {
+    if(*this == other) {
+        return *this;
+    }
+
+    this->_matrix.clear();
+    for (int i = 0; i < other.lines; i++) {
+        vector<double> tmp;
+        for (int j = 0; j < other.columns; j++) {
+            tmp.push_back(other._matrix[i][j]);
+        }
+        this->_matrix.push_back(tmp);
+    }
+    this->lines = other.lines;
+    this->columns = other.columns;
+    return *this;
+}
 
 
 
