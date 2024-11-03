@@ -9,6 +9,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/lab2-Gaus/CMakeFiles/rebuild_c
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab3-simple_iteration_method/CMakeFiles/cm_simple_iteration_method_test.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab3-simple_iteration_method/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab3-simple_iteration_method/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab4-Rotation_method/CMakeFiles/cm_rotation_method_test.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab4-Rotation_method/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab4-Rotation_method/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/matrix.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir

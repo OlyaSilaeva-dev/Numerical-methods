@@ -11,7 +11,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -63,6 +64,21 @@
 					"source" : "lab3-simple_iteration_method",
 					"targetIndexes" : 
 					[
+						3
+					]
+				},
+				{
+					"build" : "lab4-Rotation_method",
+					"jsonFile" : "directory-lab4-Rotation_method-Debug-7f3c898e33a23056518f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab4-Rotation_method",
+					"targetIndexes" : 
+					[
 						2
 					]
 				},
@@ -70,7 +86,7 @@
 					"build" : "matrix",
 					"childIndexes" : 
 					[
-						5
+						6
 					],
 					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
 					"minimumCMakeVersion" : 
@@ -82,7 +98,7 @@
 					"source" : "matrix",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -92,12 +108,12 @@
 					{
 						"string" : "3.25"
 					},
-					"parentIndex" : 4,
+					"parentIndex" : 5,
 					"projectIndex" : 0,
 					"source" : "matrix/test",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				}
 			],
@@ -112,7 +128,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"name" : "cm",
 					"targetIndexes" : 
@@ -121,7 +138,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -130,7 +148,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "cm_gaus_test::@03dec05e6762ff44b7f9",
-					"jsonFile" : "target-cm_gaus_test-Debug-3fc34adc336f0ad2bc21.json",
+					"jsonFile" : "target-cm_gaus_test-Debug-828ea23813e4034a990c.json",
 					"name" : "cm_gaus_test",
 					"projectIndex" : 0
 				},
@@ -142,6 +160,13 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 4,
+					"id" : "cm_rotation_method_test::@7cda9fdac877f26f30d5",
+					"jsonFile" : "target-cm_rotation_method_test-Debug-ed494efb2ba1620afcb8.json",
+					"name" : "cm_rotation_method_test",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "cm_simple_iteration_method_test::@68c63ce1249e30b5fb8b",
 					"jsonFile" : "target-cm_simple_iteration_method_test-Debug-787033f1791ac9f7da2b.json",
@@ -149,14 +174,14 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 4,
+					"directoryIndex" : 5,
 					"id" : "matrix::@23c283fdd1b78e1a8728",
 					"jsonFile" : "target-matrix-Debug-b0333e47b9e6f61e865b.json",
 					"name" : "matrix",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 5,
+					"directoryIndex" : 6,
 					"id" : "matrix_test::@3c457d132e73201f9a12",
 					"jsonFile" : "target-matrix_test-Debug-00164ed2eefda791c7b8.json",
 					"name" : "matrix_test",
