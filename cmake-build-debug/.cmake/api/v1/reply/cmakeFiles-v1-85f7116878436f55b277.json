@@ -163,6 +163,9 @@
 			"path" : "lab4-Rotation_method/CMakeLists.txt"
 		},
 		{
+			"path" : "lab5-4methods_for_nonlinear_equations/CMakeLists.txt"
+		},
+		{
 			"path" : "matrix/CMakeLists.txt"
 		},
 		{

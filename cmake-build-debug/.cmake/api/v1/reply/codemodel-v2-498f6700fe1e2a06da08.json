@@ -12,7 +12,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -34,7 +35,7 @@
 					"source" : "lab1-Progonka",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -49,7 +50,7 @@
 					"source" : "lab2-Gaus",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -64,7 +65,7 @@
 					"source" : "lab3-simple_iteration_method",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -79,14 +80,29 @@
 					"source" : "lab4-Rotation_method",
 					"targetIndexes" : 
 					[
-						2
+						3
+					]
+				},
+				{
+					"build" : "lab5-4methods_for_nonlinear_equations",
+					"jsonFile" : "directory-lab5-4methods_for_nonlinear_equations-Debug-11497ce2c1d7ebd5fc15.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab5-4methods_for_nonlinear_equations",
+					"targetIndexes" : 
+					[
+						0
 					]
 				},
 				{
 					"build" : "matrix",
 					"childIndexes" : 
 					[
-						6
+						7
 					],
 					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
 					"minimumCMakeVersion" : 
@@ -98,7 +114,7 @@
 					"source" : "matrix",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -108,12 +124,12 @@
 					{
 						"string" : "3.25"
 					},
-					"parentIndex" : 5,
+					"parentIndex" : 6,
 					"projectIndex" : 0,
 					"source" : "matrix/test",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				}
 			],
@@ -129,7 +145,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					],
 					"name" : "cm",
 					"targetIndexes" : 
@@ -139,16 +156,24 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 5,
+					"id" : "cm_4methods_for_nonlinear_equations::@2f1c0b0c3bf79c99d253",
+					"jsonFile" : "target-cm_4methods_for_nonlinear_equations-Debug-faa42011d6ed1f5dfdb8.json",
+					"name" : "cm_4methods_for_nonlinear_equations",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 2,
 					"id" : "cm_gaus_test::@03dec05e6762ff44b7f9",
-					"jsonFile" : "target-cm_gaus_test-Debug-828ea23813e4034a990c.json",
+					"jsonFile" : "target-cm_gaus_test-Debug-3fc34adc336f0ad2bc21.json",
 					"name" : "cm_gaus_test",
 					"projectIndex" : 0
 				},
@@ -174,14 +199,14 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 5,
+					"directoryIndex" : 6,
 					"id" : "matrix::@23c283fdd1b78e1a8728",
 					"jsonFile" : "target-matrix-Debug-b0333e47b9e6f61e865b.json",
 					"name" : "matrix",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 6,
+					"directoryIndex" : 7,
 					"id" : "matrix_test::@3c457d132e73201f9a12",
 					"jsonFile" : "target-matrix_test-Debug-00164ed2eefda791c7b8.json",
 					"name" : "matrix_test",

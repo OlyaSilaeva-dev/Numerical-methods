@@ -24,7 +24,6 @@ matrix transpose (matrix &other) {
 }
 
 void input_matrix(const string &file_name, matrix &input_matrix) {
-
     ifstream fin(file_name);
     if (!fin.is_open()) {
         throw std::runtime_error("Wrong input file: " + file_name + "\n");
