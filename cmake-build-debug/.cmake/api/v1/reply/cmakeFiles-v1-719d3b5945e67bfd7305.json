@@ -166,6 +166,9 @@
 			"path" : "lab5-4methods_for_nonlinear_equations/CMakeLists.txt"
 		},
 		{
+			"path" : "lab6-systems_of_nonlinear_equations/CMakeLists.txt"
+		},
+		{
 			"path" : "matrix/CMakeLists.txt"
 		},
 		{

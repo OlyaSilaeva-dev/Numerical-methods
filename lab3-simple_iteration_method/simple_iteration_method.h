@@ -43,15 +43,15 @@ void conversion_to_an_equivalent_form(matrix &_matrix, vector<double> &b, matrix
     matrix alpha_tmp(_alpha);
     vector<double> beta_tmp(n, 0);
 
-    double norm = 0;
+    double norm = 0.0;
 
     for (int i = 0; i < n; i++) {
-        double sum = 0;
+        double sum = 0.0;
         double koef = _matrix[i][i];
 
         for (int j = 0; j < n; j++) {
             if (j == i) {
-                alpha_tmp[i][j] = 0;
+                alpha_tmp[i][j] = 0.0;
             } else {
                 alpha_tmp[i][j] = - _matrix[i][j] / koef;
                 sum += abs(alpha_tmp[i][j]);
@@ -65,7 +65,7 @@ void conversion_to_an_equivalent_form(matrix &_matrix, vector<double> &b, matrix
         }
     }
 
-    std::cout << alpha_tmp << std::endl;
+    std::cout << "Alpha: \n" << alpha_tmp << std::endl;
 
     std::cout << "Norm: "<< norm << std::endl;
 
@@ -91,11 +91,13 @@ vector<double> simple_iteration_method(matrix &_matrix, vector<double> &b) {
     matrix _beta;
     conversion_to_an_equivalent_form(_matrix, b, alpha, _beta);
 
-    matrix x(_beta);
+    matrix x = _beta;
     std::vector<double> tmp;
 
     double error;
+    int cnt = 0;
     do {
+        cnt++;
         matrix x_new = alpha * x + _beta;
         error = 0.0;
         for (int i = 0; i < n; i++) {
@@ -104,7 +106,7 @@ vector<double> simple_iteration_method(matrix &_matrix, vector<double> &b) {
         x = x_new;
     } while (error > EPS);
 
-
+    std::cout << "sim: " << cnt << std::endl;
     std::vector<double> x_v;
     for (int i = 0; i < x.get_lines_cnt(); i++) {
         x_v.push_back(x[i][0]);
@@ -125,7 +127,9 @@ vector<double> Zeidal_method(matrix &_matrix, vector<double> &b) {
     int max_iterations = 1000; // Ограничение по числу итераций
     int iterations = 0;
 
+    int cnt = 0;
     do {
+        cnt++;
         error = 0.0;
 
         for (int i = 0; i < n; i++) {
@@ -149,6 +153,7 @@ vector<double> Zeidal_method(matrix &_matrix, vector<double> &b) {
         throw std::runtime_error("Exceeded maximum number of iterations, method did not converge");
     }
 
+    std::cout << "Zeidal iterations: " << cnt << std::endl;
     std::vector<double> x_v;
     for (int i = 0; i < x.get_lines_cnt(); i++) {
         x_v.push_back(x[i][0]);

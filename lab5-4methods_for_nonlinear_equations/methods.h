@@ -6,71 +6,116 @@
 #include <sstream>
 #include <vector>
 #include <math.h>
+#include <functional>
 
-void input_data(const std::string & file_name, std::string & expression, double & epsilon) {
-    std::ifstream fin(file_name);
-    if (!fin.is_open()) {
-        throw std::runtime_error("Wrong input file: " + file_name + "\n");
-    }
+using ld = long double;
+const ld EPS = 1e-9;
 
-    getline(fin, expression);
-    fin >> epsilon;
-}
+ld simple_iteration_method (const std::function<ld(ld)>& phi_f, const std::function<ld(ld)>& d_phi_f, ld a, ld b, ld epsilon) {
+    ld q;
+    ld prev = (a + b) * 0.5;
+    ld x = prev;
 
-double evaluate_expression(const std::string& expr, double x) {
-    // Здесь мы разберем только конкретные типы выражений для примера.
-    // Например, поддержка pow(), sqrt(), +, -, *, /
-    if (expr.find("pow(") == 0) {
-        auto start = expr.find('(') + 1;
-        auto comma = expr.find(',');
-        auto end = expr.find(')');
+    do {
+        prev = x;
+        x = phi_f(prev);
 
-        double base = std::stod(expr.substr(start, comma - start));
-        double exponent = std::stod(expr.substr(comma + 1, end - comma - 1));
-        return std::pow(base, exponent);
-    }
-    else if (expr.find("sqrt(") == 0) {
-        auto start = expr.find('(') + 1;
-        auto end = expr.find(')');
-
-        std::string inner_expr = expr.substr(start, end - start);
-        double inner_value = evaluate_expression(inner_expr, x);
-        return std::sqrt(inner_value);
-    }
-    else if (expr.find("x") != std::string::npos) {
-        std::string modified_expr = expr;
-        size_t pos = modified_expr.find("x");
-        while (pos != std::string::npos) {
-            modified_expr.replace(pos, 1, std::to_string(x));
-            pos = modified_expr.find("x", pos + 1);
+        q = abs(d_phi_f(x));
+        if (q >= 1) {
+            throw std::runtime_error("The convergence condition is not satisfied!");
         }
-        return std::stod(modified_expr);
-    }
-    else {
-        return std::stod(expr);
-    }
+//        std::cout << q << std::endl;
+
+    } while (((q / (1 - q)) * abs(x - prev)) > epsilon);
+
+    return x;
 }
 
-std::vector<double> simple_iteration_method (std::string &expression, double initial_guess, double epsilon, int max_iter = 1000) {
-    std::vector<double> iterations;
-    double x = initial_guess;
-    iterations.push_back(x);
+ld dichotomy_method (const std::function<ld(ld)>& f, ld a, ld b, ld epsilon) {
+    if (f(a) * f(b) > 0) {
+        throw std::runtime_error("The same sign at the ends of segment!");
+    }
 
-    for (int i = 0; i < max_iter; ++i) {
-        double next_x = evaluate_expression(expression, x);
-        iterations.push_back(next_x);
+    ld mid;
+    while ((b - a) > 2 * epsilon) {
+        mid = (a + b) * 0.5;
 
-        if (std::abs(next_x - x) < epsilon) {
-            break;
+        if (abs(f(mid)) < epsilon) {
+            return mid;
         }
 
-        x = next_x;
+        if (f(a) * f(mid) < 0) {
+            b = mid;
+        } else {
+            a = mid;
+        }
     }
 
-    return iterations;
+    return (a + b) * 0.5;
 }
 
+ld newton_method (const std::function<ld(ld)>& func, const std::function<ld(ld)>& dfunc,
+                  const std::function<ld(ld)>& ddfunc, ld a, ld b,ld epsilon) {
+    ld x, prev;
 
+    if (func(a) * func(b) > 0) {
+        throw std::runtime_error("The same sign at the ends of segment!");
+    }
 
+    if (func(a) * ddfunc(a) > 0) {
+        x = a;
+    } else if (func(b) * ddfunc(b) > 0) {
+        x = b;
+    } else {
+        x = (a + b) * 0.5;
+    }
+
+    ld df;
+    do {
+        prev = x;
+
+        df = dfunc(x);
+
+        if (abs(df) < epsilon) {
+            throw std::runtime_error("Division by zero!");
+        }
+
+        x = x - func(x) / df;
+    } while (std::abs (prev - x) > epsilon);
+
+    return x;
+}
+
+ld secant_method (const std::function<ld(ld)>& func, const std::function<ld(ld)>& ddfunc,
+                  ld epsilon, ld a, ld b) {
+    ld x, prev, next;
+
+    if (func(a) * func(b) > 0) {
+        throw std::runtime_error("The same sign at the ends of segment!");
+    }
+
+    if (func(a) * ddfunc(a) > 0) {
+        prev = a;
+    } else if (func(b) * ddfunc(b) > 0) {
+        prev = b;
+    } else {
+        prev = (a + b) * 0.5;
+    }
+
+    x = prev + epsilon;
+
+    ld fx, fxp;
+    do {
+        fx = func(x);
+        fxp = func(prev);
+
+        next = x - (fx * (x - prev)) / (fx - fxp);
+
+        prev = x;
+        x = next;
+    } while (abs(prev - x) > epsilon);
+
+    return x;
+}
 
 #endif //CM_METHODS_H

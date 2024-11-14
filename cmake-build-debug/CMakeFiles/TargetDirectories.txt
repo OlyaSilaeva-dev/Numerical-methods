@@ -15,6 +15,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/lab4-Rotation_method/CMakeFile
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab5-4methods_for_nonlinear_equations/CMakeFiles/cm_4methods_for_nonlinear_equations.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab5-4methods_for_nonlinear_equations/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab5-4methods_for_nonlinear_equations/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab6-systems_of_nonlinear_equations/CMakeFiles/cm_systems_of_nonlinear_equations_test.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab6-systems_of_nonlinear_equations/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab6-systems_of_nonlinear_equations/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/matrix.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir

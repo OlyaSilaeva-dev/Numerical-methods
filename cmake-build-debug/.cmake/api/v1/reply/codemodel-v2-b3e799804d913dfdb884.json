@@ -13,7 +13,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -99,10 +100,25 @@
 					]
 				},
 				{
+					"build" : "lab6-systems_of_nonlinear_equations",
+					"jsonFile" : "directory-lab6-systems_of_nonlinear_equations-Debug-8aaee779fe732d5a93cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab6-systems_of_nonlinear_equations",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
 					"build" : "matrix",
 					"childIndexes" : 
 					[
-						7
+						8
 					],
 					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
 					"minimumCMakeVersion" : 
@@ -114,7 +130,7 @@
 					"source" : "matrix",
 					"targetIndexes" : 
 					[
-						5
+						6
 					]
 				},
 				{
@@ -124,12 +140,12 @@
 					{
 						"string" : "3.25"
 					},
-					"parentIndex" : 6,
+					"parentIndex" : 7,
 					"projectIndex" : 0,
 					"source" : "matrix/test",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				}
 			],
@@ -146,7 +162,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					],
 					"name" : "cm",
 					"targetIndexes" : 
@@ -157,7 +174,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -166,7 +184,7 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "cm_4methods_for_nonlinear_equations::@2f1c0b0c3bf79c99d253",
-					"jsonFile" : "target-cm_4methods_for_nonlinear_equations-Debug-faa42011d6ed1f5dfdb8.json",
+					"jsonFile" : "target-cm_4methods_for_nonlinear_equations-Debug-cd5ced6fdb41125e76cb.json",
 					"name" : "cm_4methods_for_nonlinear_equations",
 					"projectIndex" : 0
 				},
@@ -200,13 +218,20 @@
 				},
 				{
 					"directoryIndex" : 6,
+					"id" : "cm_systems_of_nonlinear_equations_test::@4e4f178ebf2f27f04b18",
+					"jsonFile" : "target-cm_systems_of_nonlinear_equations_test-Debug-2efdaeb436739ed146f3.json",
+					"name" : "cm_systems_of_nonlinear_equations_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
 					"id" : "matrix::@23c283fdd1b78e1a8728",
 					"jsonFile" : "target-matrix-Debug-b0333e47b9e6f61e865b.json",
 					"name" : "matrix",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 7,
+					"directoryIndex" : 8,
 					"id" : "matrix_test::@3c457d132e73201f9a12",
 					"jsonFile" : "target-matrix_test-Debug-00164ed2eefda791c7b8.json",
 					"name" : "matrix_test",

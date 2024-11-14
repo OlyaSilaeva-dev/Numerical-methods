@@ -73,10 +73,12 @@ void Rotation_method(const matrix &_matrix, vector<double> &eigenvalues, matrix 
         }
 
         double delta = A[max_i][max_i] - A[max_j][max_j];
+        double fi;
         if (abs(delta) < EPS) {
-            throw runtime_error("division by zero!!!");
+//            throw runtime_error("division by zero!!!");
+            fi = M_PI / 4;
         }
-        auto fi = 0.5 * atan2(2 * max_element, delta);
+        fi = 0.5 * atan2(2 * max_element, delta);
 
         vector<vector<double>> u_vec(n, vector<double>(n, 0.0));
         matrix Uk(u_vec);

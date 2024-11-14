@@ -14,6 +14,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="cm" targetName="cm_systems_of_nonlinear_equations_test" />
       <config projectName="cm" targetName="matrix_test" />
       <config projectName="cm" targetName="cm_4methods_for_nonlinear_equations" />
       <config projectName="cm" targetName="cm_simple_iteration_method_test" />
@@ -30,27 +31,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392f9c2a-2a11-4c8a-97f6-8c650bd17f19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/methods.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab6-systems_of_nonlinear_equations/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab6-systems_of_nonlinear_equations/methods.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-9461834b015ce8a268dd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-2ea18f6952125a4f89a8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-4c7b1432015a005281b4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-04T10-11-08-0650.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cm_gaus_test-Debug-828ea23813e4034a990c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-498f6700fe1e2a06da08.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-04T16-09-15-0734.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cm_4methods_for_nonlinear_equations-Debug-faa42011d6ed1f5dfdb8.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab3-simple_iteration_method/CMakeFiles/cm_simple_iteration_method_test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab3-simple_iteration_method/CMakeFiles/cm_simple_iteration_method_test.dir/test.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab3-simple_iteration_method/cm_simple_iteration_method_test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab3-simple_iteration_method/cm_simple_iteration_method_test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/CMakeFiles/cm_rotation_method_test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/CMakeFiles/cm_rotation_method_test.dir/test.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/cm_rotation_method_test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/cm_rotation_method_test.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2-Gaus/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab2-Gaus/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5-4methods_for_nonlinear_equations/CMakeFiles/cm_4methods_for_nonlinear_equations.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5-4methods_for_nonlinear_equations/CMakeFiles/cm_4methods_for_nonlinear_equations.dir/test.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab5-4methods_for_nonlinear_equations/cm_4methods_for_nonlinear_equations.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab5-4methods_for_nonlinear_equations/cm_4methods_for_nonlinear_equations.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3-simple_iteration_method/simple_iteration_method.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab3-simple_iteration_method/simple_iteration_method.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3-simple_iteration_method/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab3-simple_iteration_method/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/methods.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/methods.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab5-4methods_for_nonlinear_equations/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +96,7 @@
     "CMake Application.cm_4methods_for_nonlinear_equations.executor": "Run",
     "CMake Application.cm_rotation_method_test.executor": "Run",
     "CMake Application.cm_simple_iteration_method_test.executor": "Run",
+    "CMake Application.cm_systems_of_nonlinear_equations_test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -113,7 +120,7 @@
       <recent name="C:\src\GitHub\Numerical-methods\lab1-Progonka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.cm_4methods_for_nonlinear_equations">
+  <component name="RunManager" selected="CMake Application.cm_systems_of_nonlinear_equations_test">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -144,6 +151,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cm_systems_of_nonlinear_equations_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_systems_of_nonlinear_equations_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_systems_of_nonlinear_equations_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="matrix" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="matrix" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -160,6 +172,7 @@
       <item itemvalue="CMake Application.cm_simple_iteration_method_test" />
       <item itemvalue="CMake Application.cm_rotation_method_test" />
       <item itemvalue="CMake Application.cm_4methods_for_nonlinear_equations" />
+      <item itemvalue="CMake Application.cm_systems_of_nonlinear_equations_test" />
       <item itemvalue="CMake Application.matrix" />
       <item itemvalue="CMake Application.matrix_test" />
     </list>
@@ -213,6 +226,14 @@
       <workItem from="1730637678628" duration="10000" />
       <workItem from="1730642423687" duration="7202000" />
       <workItem from="1730712836220" duration="25847000" />
+      <workItem from="1730900165607" duration="3452000" />
+      <workItem from="1730923098063" duration="6343000" />
+      <workItem from="1730969349575" duration="11582000" />
+      <workItem from="1731048391304" duration="7095000" />
+      <workItem from="1731482382462" duration="858000" />
+      <workItem from="1731487332958" duration="979000" />
+      <workItem from="1731505933083" duration="11775000" />
+      <workItem from="1731613994139" duration="6298000" />
     </task>
     <servers />
   </component>
