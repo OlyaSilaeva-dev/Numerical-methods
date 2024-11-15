@@ -172,6 +172,72 @@ matrix &matrix::operator=(const matrix &other) {
     return *this;
 }
 
+matrix &matrix::reverse_matrix(matrix& _matrix) {
+    int n = _matrix.get_lines_cnt();
+    if (_matrix.get_columns_cnt() != n) {
+        throw std::invalid_argument("The matrix must be square.");
+    }
+
+    // Создаем расширенную матрицу [A | E]
+    std::vector<std::vector<double>> augmented(n, std::vector<double>(2 * n, 0.0));
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < 2 * n; ++j) {
+            if (j < n) {
+                augmented[i][j] = _matrix.get_matrix()[i][j];
+            } else {
+                augmented[i][j] = (i == (j - n)) ? 1.0 : 0.0;
+            }
+        }
+    }
+
+    // Приведение расширенной матрицы к приведенному виду
+    for (int i = 0; i < n; ++i) {
+        // Поиск максимального элемента в столбце для выбора опорного элемента
+        double maxEl = abs(augmented[i][i]);
+        int maxRow = i;
+        for (int k = i + 1; k < n; ++k) {
+            if (abs(augmented[k][i]) > maxEl) {
+                maxEl = abs(augmented[k][i]);
+                maxRow = k;
+            }
+        }
+
+        // Проверка на вырожденность матрицы
+        if (maxEl < EXP) {
+            throw std::runtime_error("The matrix is degenerate and has no inverse matrix.");
+        }
+        // Перестановка строк
+        std::swap(augmented[i], augmented[maxRow]);
+
+        // Приведение опорного элемента к 1
+        double pivot = augmented[i][i];
+        for (int j = 0; j < 2 * n; ++j) {
+            augmented[i][j] /= pivot;
+        }
+
+        // Обнуление остальных элементов в текущем столбце
+        for (int k = 0; k < n; ++k) {
+            if (k != i) {
+                double factor = augmented[k][i];
+                for (int j = 0; j < 2 * n; ++j) {
+                    augmented[k][j] -= factor * augmented[i][j];
+                }
+            }
+        }
+    }
+
+    // Извлечение обратной матрицы из расширенной матрицы
+    std::vector<std::vector<double>> inverse(n, std::vector<double>(n, 0.0));
+    for (int i = 0; i < n; ++i) {
+        for (int j = n; j < 2 * n; ++j) {
+            inverse[i][j - n] = augmented[i][j];
+        }
+    }
+    matrix result(inverse);
+    std::cout << result;
+    (*this) = result;
+    return *this;
+}
 
 
 

@@ -61,6 +61,8 @@ public:
     matrix operator+(const matrix &other) const;
 
     matrix operator+(const vector<double> &other) const;
+
+    matrix &reverse_matrix(matrix& _matrix);
 };
 
 

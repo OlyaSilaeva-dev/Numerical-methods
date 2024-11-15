@@ -32,4 +32,11 @@ int main () {
     for (auto i : result) {
         std::cout << i << " ";
     }
+
+    std::cout << "result of Newton method: " << std::endl;
+    vector<ld> result1 = NewtonMethod(2, phi_f, d_phi_f, x_0, 1e-9);
+    for (auto i : result1) {
+        std::cout << i << " ";
+    }
+
 }

@@ -102,10 +102,12 @@ vector<double>  Gaus_method(matrix &_matrix, vector<double> &result, double &_de
     std::vector<double> X(n, 0);
 
     for (int i = n-1; i >= 0; i--) {
-        X[i] = _extended_matrix.get_matrix()[i][m-1] / _extended_matrix.get_matrix()[i][i];
-        det *= _extended_matrix.get_matrix()[i][i];
-        for (int j = i + 1; j < n; j++) {
-            X[i] -= _extended_matrix.get_matrix()[i][j] * X[j] / _extended_matrix.get_matrix()[i][i];
+        if (abs(_extended_matrix.get_matrix()[i][i]) < EPS) {
+            X[i] = _extended_matrix.get_matrix()[i][m-1] / _extended_matrix.get_matrix()[i][i];
+            det *= _extended_matrix.get_matrix()[i][i];
+            for (int j = i + 1; j < n; j++) {
+                X[i] -= _extended_matrix.get_matrix()[i][j] * X[j] / _extended_matrix.get_matrix()[i][i];
+            }
         }
     }
 

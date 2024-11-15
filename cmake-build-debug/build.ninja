@@ -389,7 +389,7 @@ build cmake_object_order_depends_target_cm_systems_of_nonlinear_equations_test: 
 build lab6-systems_of_nonlinear_equations/CMakeFiles/cm_systems_of_nonlinear_equations_test.dir/test.cpp.obj: CXX_COMPILER__cm_systems_of_nonlinear_equations_test_unscanned_Debug C$:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/test.cpp || cmake_object_order_depends_target_cm_systems_of_nonlinear_equations_test
   DEP_FILE = lab6-systems_of_nonlinear_equations\CMakeFiles\cm_systems_of_nonlinear_equations_test.dir\test.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/../matrix
+  INCLUDES = -IC:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/../matrix -IC:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/../lab2-Gaus
   OBJECT_DIR = lab6-systems_of_nonlinear_equations\CMakeFiles\cm_systems_of_nonlinear_equations_test.dir
   OBJECT_FILE_DIR = lab6-systems_of_nonlinear_equations\CMakeFiles\cm_systems_of_nonlinear_equations_test.dir
 

@@ -13,4 +13,5 @@ target_include_directories(
         cm_systems_of_nonlinear_equations_test
         PUBLIC
         ../matrix
+        ../lab2-Gaus
 )
