@@ -39,7 +39,6 @@ vector<ld> simple_iteration_method(int cnt, const vector<function<ld(vector<ld>)
         for (int j = 0; j < cnt; j++) {
             Xk[j] = phi_f[j](prev);
         }
-        std::cout << std::endl;
 
         norm = 0;
         for (int j = 0; j < cnt; j++) {
@@ -51,94 +50,56 @@ vector<ld> simple_iteration_method(int cnt, const vector<function<ld(vector<ld>)
     } while (q / (1 - q) * norm >= epsilon);
 
     std::cout << "Final result after " << iteration << " iterations: ";
-    for (ld x : Xk) {
-        std::cout << x << " ";
-    }
     //1.2758 2.0596
 
     std::cout << std::endl;
     return Xk;
 }
 
+ld det2(ld a11, ld a12, ld a21, ld a22) {
+    return a11 * a22 - a21 * a12;
+}
+
 vector<ld> NewtonMethod(int cnt, const vector<function<ld(vector<ld>)>>& phi_f,
-                        const vector<vector<function<ld(vector<ld>)>>>& d_phi_f,
+                        const vector<vector<function<ld(vector<ld>)>>>& J,
                         const vector<ld>& x_0, ld epsilon) {
     std::cout << "Newton method start" << std::endl;
     vector<ld> Xk = x_0;
-    vector<ld> prev = x_0;
-
-    // Печать начального приближения
-    std::cout << "Initial approximation: ";
-    for (ld i : Xk) {
-        std::cout << i << " ";
-    }
-    std::cout << std::endl;
+    vector<ld> prev = Xk;
 
     ld _max;
+
+    if (phi_f.size() != 2 || J.size() != 2 || J[0].size() != 2 || x_0.size() != 2) {
+        std::cout << "Wrong number arguments" << std::endl;
+        return {};
+    }
+
+    int iteration = 0;
     do {
-        vector<double> delta_x;
+        ld detA1k = det2(phi_f[0](prev), J[0][1](prev),
+                         phi_f[1](prev), J[1][1](prev));
+        ld detA2k = det2(J[0][0](prev), phi_f[0](prev),
+                         J[1][0](prev), phi_f[1](prev));
 
-        // Матрица Якоби
-        vector<vector<double>> matrix_phi_v(cnt, vector<double>(cnt, 0));
-        for (int i = 0; i < cnt; i++) {
-            for (int j = 0; j < cnt; j++) {
-                if (d_phi_f[i][j] != nullptr) {
-                    try {
-                        matrix_phi_v[i][j] = (double)d_phi_f[i][j](Xk);
-                    } catch (const std::exception& e) {
-                        std::cerr << "Error in Jacobian computation at [" << i << "," << j << "]: " << e.what() << std::endl;
-                        throw;
-                    }
-                } else {
-                    matrix_phi_v[i][j] = 0;
-                }
-            }
-        }
-        matrix matrix_phi(matrix_phi_v);
+//        std::cout << "[94] A1: " << detA1k << " A2: " << detA2k << std::endl;
 
-        // Печать матрицы Якоби
-        std::cout << "Jacobian matrix:\n" << matrix_phi << std::endl;
+        ld detJ = det2(J[0][0](prev), J[0][1](prev),
+                       J[1][0](prev), J[1][1](prev));
 
-        // Вектор b
-        std::cout << "vector b: ";
-        vector<double> b_v(cnt, 0);
-        for (int i = 0; i < cnt; i++) {
-            b_v[i] = -(double)phi_f[i](Xk);
-            std::cout << b_v[i] << " ";
-        }
-        std::cout << std::endl;
+        Xk[0] = prev[0] - detA1k / detJ;
+        Xk[1] = prev[1] - detA2k / detJ;
 
-        // Решение системы уравнений
-        double not_use;
-        delta_x = Gaus_method(matrix_phi, b_v, not_use);
-
-        if (delta_x.empty()) {
-            throw std::runtime_error("Gaussian method returned empty result.");
-        }
-
-        // Обновление приближения
-        for (int i = 0; i < cnt; i++) {
-            Xk[i] = Xk[i] - (ld)delta_x[i];
-            std::cout << delta_x[i] << " ";
-        }
-
-        // Вычисление максимального изменения
         _max = 0;
-        for (int i = 0; i < cnt; i++) {
-            _max = max(abs(Xk[i] - prev[i]) / max(abs(prev[i]), (ld)1.0), _max);
+        for (int i = 0; i < 2; i++) {
+            _max = max(_max, abs(Xk[i] - prev[i]));
         }
 
-        // Печать текущего приближения
-        std::cout << "Current approximation: ";
-        for (ld x : Xk) {
-            std::cout << x << " ";
-        }
-        std::cout << "\nMax difference in this iteration: " << _max << std::endl;
-
-        // Обновляем prev
+        iteration++;
         prev = Xk;
-
     } while (_max >= epsilon);
+
+
+    std::cout << "Final result after " << iteration << " iterations: " << std::endl;
 
     return Xk;
 }
