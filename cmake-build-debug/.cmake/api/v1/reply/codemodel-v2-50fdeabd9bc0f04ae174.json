@@ -14,7 +14,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -36,7 +37,7 @@
 					"source" : "lab1-Progonka",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -51,7 +52,7 @@
 					"source" : "lab2-Gaus",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -66,7 +67,7 @@
 					"source" : "lab3-simple_iteration_method",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -81,7 +82,7 @@
 					"source" : "lab4-Rotation_method",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -111,14 +112,29 @@
 					"source" : "lab6-systems_of_nonlinear_equations",
 					"targetIndexes" : 
 					[
-						5
+						6
+					]
+				},
+				{
+					"build" : "lab7-Lagrange_and_Newton_interpolation",
+					"jsonFile" : "directory-lab7-Lagrange_and_Newton_interpolation-Debug-f823725058b655b19cfe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lab7-Lagrange_and_Newton_interpolation",
+					"targetIndexes" : 
+					[
+						1
 					]
 				},
 				{
 					"build" : "matrix",
 					"childIndexes" : 
 					[
-						8
+						9
 					],
 					"jsonFile" : "directory-matrix-Debug-512939964dfec9a9c27b.json",
 					"minimumCMakeVersion" : 
@@ -130,7 +146,7 @@
 					"source" : "matrix",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -140,12 +156,12 @@
 					{
 						"string" : "3.25"
 					},
-					"parentIndex" : 7,
+					"parentIndex" : 8,
 					"projectIndex" : 0,
 					"source" : "matrix/test",
 					"targetIndexes" : 
 					[
-						7
+						8
 					]
 				}
 			],
@@ -163,7 +179,8 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9
 					],
 					"name" : "cm",
 					"targetIndexes" : 
@@ -175,7 +192,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -186,6 +204,13 @@
 					"id" : "cm_4methods_for_nonlinear_equations::@2f1c0b0c3bf79c99d253",
 					"jsonFile" : "target-cm_4methods_for_nonlinear_equations-Debug-cd5ced6fdb41125e76cb.json",
 					"name" : "cm_4methods_for_nonlinear_equations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "cm_Lagrange_and_Newton_interpolation::@727394af86d2782759ff",
+					"jsonFile" : "target-cm_Lagrange_and_Newton_interpolation-Debug-5940dd98b4385801f0ac.json",
+					"name" : "cm_Lagrange_and_Newton_interpolation",
 					"projectIndex" : 0
 				},
 				{
@@ -224,14 +249,14 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 7,
+					"directoryIndex" : 8,
 					"id" : "matrix::@23c283fdd1b78e1a8728",
 					"jsonFile" : "target-matrix-Debug-b0333e47b9e6f61e865b.json",
 					"name" : "matrix",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 8,
+					"directoryIndex" : 9,
 					"id" : "matrix_test::@3c457d132e73201f9a12",
 					"jsonFile" : "target-matrix_test-Debug-00164ed2eefda791c7b8.json",
 					"name" : "matrix_test",

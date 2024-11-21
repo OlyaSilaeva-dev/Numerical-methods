@@ -169,6 +169,9 @@
 			"path" : "lab6-systems_of_nonlinear_equations/CMakeLists.txt"
 		},
 		{
+			"path" : "lab7-Lagrange_and_Newton_interpolation/CMakeLists.txt"
+		},
+		{
 			"path" : "matrix/CMakeLists.txt"
 		},
 		{

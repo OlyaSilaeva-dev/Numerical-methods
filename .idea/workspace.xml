@@ -14,7 +14,15 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="Project" targetName="cm_Lagrange_and_Newton_interpolation" />
+      <config projectName="cm" targetName="cm_systems_of_nonlinear_equations_test" />
+      <config projectName="cm" targetName="matrix_test" />
+      <config projectName="cm" targetName="cm_4methods_for_nonlinear_equations" />
+      <config projectName="cm" targetName="cm_simple_iteration_method_test" />
+      <config projectName="cm" targetName="matrix" />
+      <config projectName="cm" targetName="cm_progonka_test" />
+      <config projectName="cm" targetName="cm_gaus_test" />
+      <config projectName="cm" targetName="cm_rotation_method_test" />
+      <config projectName="cm" targetName="cm_Lagrange_and_Newton_interpolation" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -24,11 +32,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392f9c2a-2a11-4c8a-97f6-8c650bd17f19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab7-Lagrange_and_Newton_interpolation/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-a47b616d75f6f87fbc8f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-719d3b5945e67bfd7305.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0aa5a17cc42d939adb65.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-15T12-48-27-0066.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7-Lagrange_and_Newton_interpolation/interpolations.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab7-Lagrange_and_Newton_interpolation/interpolations.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7-Lagrange_and_Newton_interpolation/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab7-Lagrange_and_Newton_interpolation/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +89,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;CMake Application.cm_4methods_for_nonlinear_equations.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_Lagrange_and_Newton_interpolation.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.cm_rotation_method_test.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.cm_simple_iteration_method_test.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.cm_systems_of_nonlinear_equations_test.executor&quot;: &quot;Run&quot;,
@@ -96,17 +117,63 @@
       <recent name="C:\src\GitHub\Numerical-methods\lab1-Progonka" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cm_Lagrange_and_Newton_interpolation" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cm_Lagrange_and_Newton_interpolation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cm_Lagrange_and_Newton_interpolation">
+  <component name="RunManager" selected="CMake Application.cm_Lagrange_and_Newton_interpolation">
+    <configuration name="cm_4methods_for_nonlinear_equations" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_4methods_for_nonlinear_equations" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_4methods_for_nonlinear_equations">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cm_Lagrange_and_Newton_interpolation" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_Lagrange_and_Newton_interpolation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_Lagrange_and_Newton_interpolation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_gaus_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_gaus_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_gaus_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_progonka_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_progonka_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_progonka_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_rotation_method_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_rotation_method_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_rotation_method_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_simple_iteration_method_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_simple_iteration_method_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_simple_iteration_method_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_systems_of_nonlinear_equations_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_systems_of_nonlinear_equations_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_systems_of_nonlinear_equations_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="matrix" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="matrix" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="matrix_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="matrix_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="matrix_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.cm_progonka_test" />
+      <item itemvalue="CMake Application.cm_gaus_test" />
+      <item itemvalue="CMake Application.cm_simple_iteration_method_test" />
+      <item itemvalue="CMake Application.cm_rotation_method_test" />
+      <item itemvalue="CMake Application.cm_4methods_for_nonlinear_equations" />
+      <item itemvalue="CMake Application.cm_systems_of_nonlinear_equations_test" />
+      <item itemvalue="CMake Application.cm_Lagrange_and_Newton_interpolation" />
+      <item itemvalue="CMake Application.matrix" />
+      <item itemvalue="CMake Application.matrix_test" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -172,6 +239,8 @@
       <workItem from="1731843720307" duration="1392000" />
       <workItem from="1732042836260" duration="9666000" />
       <workItem from="1732094711660" duration="6373000" />
+      <workItem from="1732113760218" duration="13825000" />
+      <workItem from="1732171880625" duration="1521000" />
     </task>
     <servers />
   </component>
@@ -215,11 +284,6 @@
           <url>file://$PROJECT_DIR$/lab6-systems_of_nonlinear_equations/methods.h</url>
           <line>78</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/lab7-Lagrange_and_Newton_interpolation/interpolations.h</url>
-          <line>51</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

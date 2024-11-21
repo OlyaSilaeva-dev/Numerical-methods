@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lab7-Lagrange_and_Newton_interpolation",
+		"source" : "lab7-Lagrange_and_Newton_interpolation"
+	}
+}
