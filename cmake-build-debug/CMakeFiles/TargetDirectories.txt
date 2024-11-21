@@ -21,6 +21,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/lab6-systems_of_nonlinear_equa
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/CMakeFiles/cm_Lagrange_and_Newton_interpolation.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab8-cubic_spline/CMakeFiles/cm_cubic_spline.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab8-cubic_spline/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab8-cubic_spline/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/matrix.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir

@@ -2,3 +2,4 @@
 cmake_build_debug/
 build/
 lab7-Lagrange_and_Newton_interpolation/cmake-build-debug/
+cmake-build-debug/

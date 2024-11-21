@@ -14,7 +14,7 @@
 
 using namespace std;
 
-constexpr const double EPS = 10e-9;
+constexpr const double EPS = 1e-9;
 
 void print_matrix(vector<vector<double>> &matrix) {
     size_t n = matrix.size();
