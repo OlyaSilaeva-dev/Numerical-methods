@@ -24,6 +24,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/lab7-Lagrange_and_Newton_inter
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab8-cubic_spline/CMakeFiles/cm_cubic_spline.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab8-cubic_spline/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab8-cubic_spline/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab9-MNK/CMakeFiles/cm_mnk.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab9-MNK/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab9-MNK/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/matrix.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir

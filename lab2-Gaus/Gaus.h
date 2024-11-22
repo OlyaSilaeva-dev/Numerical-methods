@@ -85,24 +85,24 @@ vector<double>  Gaus_method(matrix &_matrix, vector<double> &result, double &_de
     int m = _matrix.get_columns_cnt() + 1;
     vector<vector<double>> extended_matrix(n, vector<double> (m, 0));
 
-    matrix _extended_matrix(extended_matrix);
     ///Расширенная матрица
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             if (j == m - 1) {
-                _extended_matrix.get_matrix()[i][j] = result[i];
+                extended_matrix[i][j] = result[i];
             } else {
-                _extended_matrix.get_matrix()[i][j] = _matrix.get_matrix()[i][j];
+                extended_matrix[i][j] = _matrix.get_matrix()[i][j];
             }
         }
     }
+    matrix _extended_matrix(extended_matrix);
 
     to_the_upper_triangular(_extended_matrix, cnt);
     ///Вычисление результата - обратный ход
     std::vector<double> X(n, 0);
 
     for (int i = n-1; i >= 0; i--) {
-        if (abs(_extended_matrix.get_matrix()[i][i]) < EPS) {
+        if (!abs(_extended_matrix.get_matrix()[i][i]) < EPS) {
             X[i] = _extended_matrix.get_matrix()[i][m-1] / _extended_matrix.get_matrix()[i][i];
             det *= _extended_matrix.get_matrix()[i][i];
             for (int j = i + 1; j < n; j++) {
@@ -201,7 +201,7 @@ matrix reverse_matrix(matrix& _matrix) {
     return result;
 }
 
-bool CheckCorrectAnswer(matrix &matrix, vector<double> b, vector<double> result) {
+bool CheckCorrectAnswer(matrix &matrix, vector<double>& b, vector<double> result) {
     int n = matrix.get_lines_cnt();
     for(int i = 0; i < n; i++) {
         double b_i = 0;

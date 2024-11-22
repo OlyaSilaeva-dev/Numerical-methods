@@ -564,6 +564,68 @@ build lab8-cubic_spline/rebuild_cache: phony lab8-cubic_spline/CMakeFiles/rebuil
 # =============================================================================
 
 # =============================================================================
+# Object build statements for EXECUTABLE target cm_mnk
+
+
+#############################################
+# Order-only phony target for cm_mnk
+
+build cmake_object_order_depends_target_cm_mnk: phony || cmake_object_order_depends_target_matrix
+
+build lab9-MNK/CMakeFiles/cm_mnk.dir/test.cpp.obj: CXX_COMPILER__cm_mnk_unscanned_Debug C$:/src/GitHub/Numerical-methods/lab9-MNK/test.cpp || cmake_object_order_depends_target_cm_mnk
+  DEP_FILE = lab9-MNK\CMakeFiles\cm_mnk.dir\test.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/src/GitHub/Numerical-methods/lab9-MNK/../matrix -IC:/src/GitHub/Numerical-methods/lab9-MNK/../lab2-Gaus
+  OBJECT_DIR = lab9-MNK\CMakeFiles\cm_mnk.dir
+  OBJECT_FILE_DIR = lab9-MNK\CMakeFiles\cm_mnk.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cm_mnk
+
+
+#############################################
+# Link the executable lab9-MNK\cm_mnk.exe
+
+build lab9-MNK/cm_mnk.exe: CXX_EXECUTABLE_LINKER__cm_mnk_Debug lab9-MNK/CMakeFiles/cm_mnk.dir/test.cpp.obj | matrix/libmatrix.a || matrix/libmatrix.a
+  FLAGS = -g
+  LINK_LIBRARIES = matrix/libmatrix.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lab9-MNK\CMakeFiles\cm_mnk.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab9-MNK\cm_mnk.exe
+  TARGET_IMPLIB = lab9-MNK\libcm_mnk.dll.a
+  TARGET_PDB = cm_mnk.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lab9-MNK/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\src\GitHub\Numerical-methods\cmake-build-debug\lab9-MNK && "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build lab9-MNK/edit_cache: phony lab9-MNK/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lab9-MNK/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\src\GitHub\Numerical-methods\cmake-build-debug\lab9-MNK && "C:\Program Files\JetBrains\CLion 2024.2.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\src\GitHub\Numerical-methods -BC:\src\GitHub\Numerical-methods\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lab9-MNK/rebuild_cache: phony lab9-MNK/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/src/GitHub/Numerical-methods/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
 # Object build statements for STATIC_LIBRARY target matrix
 
 
@@ -698,6 +760,10 @@ build cm_gaus_test: phony lab2-Gaus/cm_gaus_test.exe
 
 build cm_gaus_test.exe: phony lab2-Gaus/cm_gaus_test.exe
 
+build cm_mnk: phony lab9-MNK/cm_mnk.exe
+
+build cm_mnk.exe: phony lab9-MNK/cm_mnk.exe
+
 build cm_progonka_test: phony lab1-Progonka/cm_progonka_test.exe
 
 build cm_progonka_test.exe: phony lab1-Progonka/cm_progonka_test.exe
@@ -730,7 +796,7 @@ build matrix_test.exe: phony matrix/test/matrix_test.exe
 #############################################
 # Folder: C:/src/GitHub/Numerical-methods/cmake-build-debug
 
-build all: phony lab1-Progonka/all lab2-Gaus/all lab3-simple_iteration_method/all lab4-Rotation_method/all lab5-4methods_for_nonlinear_equations/all lab6-systems_of_nonlinear_equations/all lab7-Lagrange_and_Newton_interpolation/all lab8-cubic_spline/all matrix/all
+build all: phony lab1-Progonka/all lab2-Gaus/all lab3-simple_iteration_method/all lab4-Rotation_method/all lab5-4methods_for_nonlinear_equations/all lab6-systems_of_nonlinear_equations/all lab7-Lagrange_and_Newton_interpolation/all lab8-cubic_spline/all lab9-MNK/all matrix/all
 
 # =============================================================================
 
@@ -791,6 +857,13 @@ build lab8-cubic_spline/all: phony lab8-cubic_spline/cm_cubic_spline.exe
 # =============================================================================
 
 #############################################
+# Folder: C:/src/GitHub/Numerical-methods/cmake-build-debug/lab9-MNK
+
+build lab9-MNK/all: phony lab9-MNK/cm_mnk.exe
+
+# =============================================================================
+
+#############################################
 # Folder: C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix
 
 build matrix/all: phony matrix/libmatrix.a matrix/test/all
@@ -809,14 +882,14 @@ build matrix/test/all: phony matrix/test/matrix_test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab3-simple_iteration_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab4-Rotation_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab5-4methods_for_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab7-Lagrange_and_Newton_interpolation/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab8-cubic_spline/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab3-simple_iteration_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab4-Rotation_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab5-4methods_for_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab7-Lagrange_and_Newton_interpolation/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab8-cubic_spline/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab9-MNK/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab3-simple_iteration_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab4-Rotation_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab5-4methods_for_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab7-Lagrange_and_Newton_interpolation/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab8-cubic_spline/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/src/GitHub/Numerical-methods/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab1-Progonka/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab2-Gaus/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab3-simple_iteration_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab4-Rotation_method/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab5-4methods_for_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab6-systems_of_nonlinear_equations/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab7-Lagrange_and_Newton_interpolation/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab8-cubic_spline/CMakeLists.txt C$:/src/GitHub/Numerical-methods/lab9-MNK/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/CMakeLists.txt C$:/src/GitHub/Numerical-methods/matrix/test/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

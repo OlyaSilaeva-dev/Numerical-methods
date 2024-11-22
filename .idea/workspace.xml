@@ -16,6 +16,7 @@
     <generated>
       <config projectName="cm" targetName="cm_systems_of_nonlinear_equations_test" />
       <config projectName="cm" targetName="matrix_test" />
+      <config projectName="cm" targetName="cm_mnk" />
       <config projectName="cm" targetName="cm_4methods_for_nonlinear_equations" />
       <config projectName="cm" targetName="cm_simple_iteration_method_test" />
       <config projectName="cm" targetName="matrix" />
@@ -33,16 +34,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392f9c2a-2a11-4c8a-97f6-8c650bd17f19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab8-cubic_spline/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8-cubic_spline/spline.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8-cubic_spline/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9-MNK/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9-MNK/mnk.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9-MNK/test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-df300ecccda667c69c31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-015a4f14276f25df535a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-50fdeabd9bc0f04ae174.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-20T18-21-07-0998.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -52,9 +48,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/CMakeFiles/cm_Lagrange_and_Newton_interpolation.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/CMakeFiles/cm_Lagrange_and_Newton_interpolation.dir/test.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/cm_Lagrange_and_Newton_interpolation.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab7-Lagrange_and_Newton_interpolation/cm_Lagrange_and_Newton_interpolation.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1-Progonka/Progonka.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab1-Progonka/Progonka.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2-Gaus/Gaus.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab2-Gaus/Gaus.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +91,8 @@
     "CMake Application.cm_4methods_for_nonlinear_equations.executor": "Run",
     "CMake Application.cm_Lagrange_and_Newton_interpolation.executor": "Run",
     "CMake Application.cm_cubic_spline.executor": "Run",
+    "CMake Application.cm_gaus_test.executor": "Run",
+    "CMake Application.cm_mnk.executor": "Run",
     "CMake Application.cm_rotation_method_test.executor": "Run",
     "CMake Application.cm_simple_iteration_method_test.executor": "Run",
     "CMake Application.cm_systems_of_nonlinear_equations_test.executor": "Run",
@@ -124,7 +120,7 @@
       <recent name="C:\src\GitHub\Numerical-methods\lab1-Progonka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.cm_cubic_spline">
+  <component name="RunManager" selected="CMake Application.cm_mnk">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -146,6 +142,11 @@
       </method>
     </configuration>
     <configuration name="cm_gaus_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_gaus_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_gaus_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_mnk" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_mnk" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_mnk">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -189,6 +190,7 @@
       <item itemvalue="CMake Application.cm_systems_of_nonlinear_equations_test" />
       <item itemvalue="CMake Application.cm_Lagrange_and_Newton_interpolation" />
       <item itemvalue="CMake Application.cm_cubic_spline" />
+      <item itemvalue="CMake Application.cm_mnk" />
       <item itemvalue="CMake Application.matrix" />
       <item itemvalue="CMake Application.matrix_test" />
     </list>
@@ -259,7 +261,9 @@
       <workItem from="1732094711660" duration="6373000" />
       <workItem from="1732113760218" duration="13825000" />
       <workItem from="1732171880625" duration="1521000" />
-      <workItem from="1732181800457" duration="19438000" />
+      <workItem from="1732181800457" duration="19474000" />
+      <workItem from="1732261757859" duration="372000" />
+      <workItem from="1732270018008" duration="12537000" />
     </task>
     <servers />
   </component>
@@ -278,11 +282,6 @@
           <url>file://$PROJECT_DIR$/lab2-Gaus/Gaus.h</url>
           <line>99</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/lab2-Gaus/Gaus.h</url>
-          <line>87</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/lab2-Gaus/Gaus.h</url>
