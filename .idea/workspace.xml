@@ -34,21 +34,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392f9c2a-2a11-4c8a-97f6-8c650bd17f19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab9-MNK/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab9-MNK/mnk.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab9-MNK/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2-Gaus/Gaus.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab2-Gaus/Gaus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9-MNK/mnk.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab9-MNK/mnk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9-MNK/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab9-MNK/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +253,7 @@
       <workItem from="1732171880625" duration="1521000" />
       <workItem from="1732181800457" duration="19474000" />
       <workItem from="1732261757859" duration="372000" />
-      <workItem from="1732270018008" duration="12537000" />
+      <workItem from="1732270018008" duration="12858000" />
     </task>
     <servers />
   </component>

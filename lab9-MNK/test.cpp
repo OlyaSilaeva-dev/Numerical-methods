@@ -8,14 +8,14 @@ int main() {
     vector<double> y_test = {0.4713, 1.0114, 1.5515, 2.0916, 2.6317, 3.1718};
 
     std::cout << "The result of calculating a polynomial of the first degree: \n";
-    vector<double> result1 = polinomial_second_degree(x, y, 2);
+    vector<double> result1 = polinomial_with_degree(x, y, 2);
     for (int i = 0; i < result1.size(); i++) {
         std::cout << "a["<< i << "]" << " = " << result1[i] << std::endl;
     }
     std::cout << "With an error: " << calculate_Fi(result1, y, x) << "\n\n";
 
     std::cout << "The result of calculating a polynomial of the second degree: \n";
-    vector<double> result2 = polinomial_second_degree(x, y, 3);
+    vector<double> result2 = polinomial_with_degree(x, y, 3);
     for (int i = 0; i < result2.size(); i++) {
         std::cout << "a["<< i << "]" << " = " << result2[i] << std::endl;
     }

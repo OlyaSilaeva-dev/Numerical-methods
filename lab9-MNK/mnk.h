@@ -16,7 +16,7 @@ double sum_vector_indegree (int n, const vector<double>& v, int degree) {
     return sum;
 }
 
-vector<double> polinomial_second_degree(const vector<double>& x, const vector<double>& f, int degree) {
+vector<double> polinomial_with_degree(const vector<double>& x, const vector<double>& f, int degree) {
     int n = (int)x.size();
     vector<vector<double>> coef_a(degree, vector<double> (degree, 0));
 
