@@ -30,6 +30,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/lab9-MNK/CMakeFiles/rebuild_ca
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab10-differentiation/CMakeFiles/cm_differentiation.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab10-differentiation/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab10-differentiation/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab11-integration/CMakeFiles/cm_integration.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab11-integration/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab11-integration/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/matrix.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir
