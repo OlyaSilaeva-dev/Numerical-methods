@@ -14,19 +14,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="cm" targetName="cm_differentiation" />
-      <config projectName="cm" targetName="matrix_test" />
-      <config projectName="cm" targetName="cm_4methods_for_nonlinear_equations" />
-      <config projectName="cm" targetName="cm_progonka_test" />
-      <config projectName="cm" targetName="cm_gaus_test" />
-      <config projectName="cm" targetName="cm_systems_of_nonlinear_equations_test" />
-      <config projectName="cm" targetName="cm_mnk" />
-      <config projectName="cm" targetName="cm_simple_iteration_method_test" />
-      <config projectName="cm" targetName="matrix" />
-      <config projectName="cm" targetName="cm_integration" />
-      <config projectName="cm" targetName="cm_rotation_method_test" />
-      <config projectName="cm" targetName="cm_cubic_spline" />
-      <config projectName="cm" targetName="cm_Lagrange_and_Newton_interpolation" />
+      <config projectName="Project" targetName="cm_Causy_problem" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -36,20 +24,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392f9c2a-2a11-4c8a-97f6-8c650bd17f19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab11-integration/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab11-integration/integration.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab11-integration/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/Causy_problem.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/Causy_problem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +73,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "CMake Application.cm_4methods_for_nonlinear_equations.executor": "Run",
+    "CMake Application.cm_Causy_problem.executor": "Run",
     "CMake Application.cm_Lagrange_and_Newton_interpolation.executor": "Run",
     "CMake Application.cm_cubic_spline.executor": "Run",
     "CMake Application.cm_differentiation.executor": "Run",
@@ -99,6 +83,7 @@
     "CMake Application.cm_rotation_method_test.executor": "Run",
     "CMake Application.cm_simple_iteration_method_test.executor": "Run",
     "CMake Application.cm_systems_of_nonlinear_equations_test.executor": "Run",
+    "CMake Debug.cm.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -123,8 +108,21 @@
       <recent name="C:\src\GitHub\Numerical-methods\lab1-Progonka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.cm_integration">
+  <component name="RunManager" selected="CMake Application.cm_Causy_problem">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
+      <method v="2" />
+    </configuration>
     <configuration name="cm_4methods_for_nonlinear_equations" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_4methods_for_nonlinear_equations" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_4methods_for_nonlinear_equations">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cm_Causy_problem" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_Causy_problem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_Causy_problem">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -193,6 +191,7 @@
       <item itemvalue="CMake Application.cm_progonka_test" />
       <item itemvalue="CMake Application.cm_differentiation" />
       <item itemvalue="CMake Application.cm_integration" />
+      <item itemvalue="CMake Application.cm_Causy_problem" />
       <item itemvalue="CMake Application.cm_gaus_test" />
       <item itemvalue="CMake Application.cm_simple_iteration_method_test" />
       <item itemvalue="CMake Application.cm_rotation_method_test" />
@@ -203,7 +202,13 @@
       <item itemvalue="CMake Application.cm_mnk" />
       <item itemvalue="CMake Application.matrix" />
       <item itemvalue="CMake Application.matrix_test" />
+      <item itemvalue="CMake Debug.cm" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="CMake Debug.cm" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

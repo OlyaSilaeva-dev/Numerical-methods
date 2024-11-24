@@ -94,6 +94,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/src/GitHub/Numerical-methods/cmake-build-debug/lab12-methods_of_the_Causy_problem/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/cmake_install.cmake")
 endif()
 

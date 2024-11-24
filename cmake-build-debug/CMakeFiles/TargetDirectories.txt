@@ -33,6 +33,9 @@ C:/src/GitHub/Numerical-methods/cmake-build-debug/lab10-differentiation/CMakeFil
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab11-integration/CMakeFiles/cm_integration.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab11-integration/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/lab11-integration/CMakeFiles/rebuild_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab12-methods_of_the_Causy_problem/CMakeFiles/cm_Causy_problem.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab12-methods_of_the_Causy_problem/CMakeFiles/edit_cache.dir
+C:/src/GitHub/Numerical-methods/cmake-build-debug/lab12-methods_of_the_Causy_problem/CMakeFiles/rebuild_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/matrix.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/edit_cache.dir
 C:/src/GitHub/Numerical-methods/cmake-build-debug/matrix/CMakeFiles/rebuild_cache.dir
