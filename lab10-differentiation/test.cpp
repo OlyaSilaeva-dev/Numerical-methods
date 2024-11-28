@@ -16,4 +16,8 @@ int main () {
 
     long double result4 = differentiation_second_degree(x, y, x_star);
     cout << "differentiation_second_degree: " << result4 << endl;
+
+    if ((result1 + result2) / 2.0 == result3) {
+        std::cout << "OK!";
+    }
 }

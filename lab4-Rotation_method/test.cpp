@@ -20,7 +20,11 @@ int main () {
         }
         std::cout << std::endl;
     }
-    std::cout << std::endl;
+
+    vector<double> y_0 = {1, 1, 1};
+    double res = power_law_method(_matrix, y_0);
+
+    std::cout << "power_law_method result: " << res << std::endl;
 
 }
 

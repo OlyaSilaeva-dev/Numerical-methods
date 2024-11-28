@@ -14,7 +14,20 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="Project" targetName="cm_Causy_problem" />
+      <config projectName="cm" targetName="cm_differentiation" />
+      <config projectName="cm" targetName="matrix_test" />
+      <config projectName="cm" targetName="cm_4methods_for_nonlinear_equations" />
+      <config projectName="cm" targetName="cm_Causy_problem" />
+      <config projectName="cm" targetName="cm_progonka_test" />
+      <config projectName="cm" targetName="cm_gaus_test" />
+      <config projectName="cm" targetName="cm_systems_of_nonlinear_equations_test" />
+      <config projectName="cm" targetName="cm_mnk" />
+      <config projectName="cm" targetName="cm_simple_iteration_method_test" />
+      <config projectName="cm" targetName="matrix" />
+      <config projectName="cm" targetName="cm_integration" />
+      <config projectName="cm" targetName="cm_rotation_method_test" />
+      <config projectName="cm" targetName="cm_cubic_spline" />
+      <config projectName="cm" targetName="cm_Lagrange_and_Newton_interpolation" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -24,15 +37,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="392f9c2a-2a11-4c8a-97f6-8c650bd17f19" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9-MNK/Graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9-MNK/graph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cm_rotation_method_test-Debug-ed494efb2ba1620afcb8.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab6-systems_of_nonlinear_equations/CMakeFiles/cm_systems_of_nonlinear_equations_test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab6-systems_of_nonlinear_equations/CMakeFiles/cm_systems_of_nonlinear_equations_test.dir/test.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab6-systems_of_nonlinear_equations/cm_systems_of_nonlinear_equations_test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab6-systems_of_nonlinear_equations/cm_systems_of_nonlinear_equations_test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10-differentiation/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab10-differentiation/test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/Causy_problem.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/Causy_problem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4-Rotation_method/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab4-Rotation_method/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8-cubic_spline/spline.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab8-cubic_spline/spline.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8-cubic_spline/spline.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab8-cubic_spline/spline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix/matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix/matrix.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,45 +93,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "CMake Application.cm_4methods_for_nonlinear_equations.executor": "Run",
-    "CMake Application.cm_Causy_problem.executor": "Run",
-    "CMake Application.cm_Lagrange_and_Newton_interpolation.executor": "Run",
-    "CMake Application.cm_cubic_spline.executor": "Run",
-    "CMake Application.cm_differentiation.executor": "Run",
-    "CMake Application.cm_gaus_test.executor": "Run",
-    "CMake Application.cm_integration.executor": "Run",
-    "CMake Application.cm_mnk.executor": "Run",
-    "CMake Application.cm_rotation_method_test.executor": "Run",
-    "CMake Application.cm_simple_iteration_method_test.executor": "Run",
-    "CMake Application.cm_systems_of_nonlinear_equations_test.executor": "Run",
-    "CMake Debug.cm.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/src/GitHub/Numerical-methods",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "structure.view.defaults.are.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.graph.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_4methods_for_nonlinear_equations.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_Causy_problem.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_Lagrange_and_Newton_interpolation.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_cubic_spline.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_differentiation.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_gaus_test.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_integration.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_mnk.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_rotation_method_test.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_simple_iteration_method_test.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.cm_systems_of_nonlinear_equations_test.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Debug.cm.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/src/GitHub/Numerical-methods&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\src\GitHub\Numerical-methods\matrix\test" />
       <recent name="C:\src\GitHub\Numerical-methods\lab1-Progonka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.cm_Causy_problem">
+  <component name="RunManager" selected="CMake Application.cm_rotation_method_test">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -187,25 +211,33 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="graph.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="graph.cpp" CONFIG_NAME="graph.cpp">
+      <option name="sourceFile" value="lab9-MNK\graph.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="CMake Application.cm_progonka_test" />
-      <item itemvalue="CMake Application.cm_differentiation" />
-      <item itemvalue="CMake Application.cm_integration" />
-      <item itemvalue="CMake Application.cm_Causy_problem" />
-      <item itemvalue="CMake Application.cm_gaus_test" />
-      <item itemvalue="CMake Application.cm_simple_iteration_method_test" />
-      <item itemvalue="CMake Application.cm_rotation_method_test" />
+      <item itemvalue="C/C++ File.graph.cpp" />
       <item itemvalue="CMake Application.cm_4methods_for_nonlinear_equations" />
-      <item itemvalue="CMake Application.cm_systems_of_nonlinear_equations_test" />
+      <item itemvalue="CMake Application.cm_Causy_problem" />
       <item itemvalue="CMake Application.cm_Lagrange_and_Newton_interpolation" />
       <item itemvalue="CMake Application.cm_cubic_spline" />
+      <item itemvalue="CMake Application.cm_differentiation" />
+      <item itemvalue="CMake Application.cm_gaus_test" />
+      <item itemvalue="CMake Application.cm_integration" />
       <item itemvalue="CMake Application.cm_mnk" />
+      <item itemvalue="CMake Application.cm_progonka_test" />
+      <item itemvalue="CMake Application.cm_rotation_method_test" />
+      <item itemvalue="CMake Application.cm_simple_iteration_method_test" />
+      <item itemvalue="CMake Application.cm_systems_of_nonlinear_equations_test" />
       <item itemvalue="CMake Application.matrix" />
       <item itemvalue="CMake Application.matrix_test" />
       <item itemvalue="CMake Debug.cm" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.graph.cpp" />
         <item itemvalue="CMake Debug.cm" />
       </list>
     </recent_temporary>
@@ -283,6 +315,11 @@
       <workItem from="1732350064320" duration="4900000" />
       <workItem from="1732371072603" duration="378000" />
       <workItem from="1732374430950" duration="12451000" />
+      <workItem from="1732478500333" duration="2015000" />
+      <workItem from="1732533832635" duration="2000" />
+      <workItem from="1732629714691" duration="56000" />
+      <workItem from="1732791186401" duration="2449000" />
+      <workItem from="1732818198628" duration="6843000" />
     </task>
     <servers />
   </component>
@@ -321,6 +358,11 @@
           <url>file://$PROJECT_DIR$/lab6-systems_of_nonlinear_equations/methods.h</url>
           <line>78</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h</url>
+          <line>124</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

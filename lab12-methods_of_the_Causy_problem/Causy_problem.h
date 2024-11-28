@@ -43,7 +43,7 @@ public:
 
 };
 
-values calculation_next_value(double x_0, double y_0, double z_0, double h,
+values calculation_next_value(double x_0, vector<double> y_0, double z_0, double h,
                               const function<double(double, double, double)>& f,
                               const function<double(double, double, double)>& g,
                               parameter _parameter) {
@@ -123,7 +123,7 @@ double decision(double y_0, double z_0, double a, double b, double h, const func
     double x_cur;
     do {
         values v_tmp = values_table.back();
-        values _values = calculation_next_value(v_tmp.get('x'), v_tmp.get('y'), v_tmp.get('z'), h, f, g, _parameter);
+        values _values = calculation_next_value(v_tmp.get('x'), vector<double>(v_tmp.get('y')), v_tmp.get('z'), h, f, g, _parameter);
         x_cur = _values.get('x');
         values_table.push_back(_values);
     } while (x_cur < b);

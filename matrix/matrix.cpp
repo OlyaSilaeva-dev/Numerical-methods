@@ -117,8 +117,9 @@ matrix &matrix::operator*(const std::vector<double> &_vector) {
     matrix matrix_vector(this->_matrix);
     matrix result;
     result = *this * matrix_vector;
+
     *this = result;
-    std::cout << fixed << result;
+//    std::cout << fixed << result;
     return *this;
 }
 

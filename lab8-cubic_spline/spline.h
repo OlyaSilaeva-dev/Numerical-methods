@@ -7,6 +7,22 @@
 #include "../lab1-Progonka/Progonka.h"
 using namespace std;
 
+void print_table(vector<double> x, vector<double> a, vector<double> b, vector<double> c, vector<double> d, vector<double> result) {
+    cout << "+-----------+-----------+-----------+-----------+-----------+-----------+" << endl;
+    cout << "|     x     |     a     |     b     |     c     |     d     |   result  |" << endl;
+    cout << "+-----------+-----------+-----------+-----------+-----------+-----------+" << endl;
+
+    for (int i = 0; i < a.size(); i++) {
+        cout << "| " << setw(9) << fixed << setprecision(6) << x[i] << " "
+             << "| " << setw(9) << fixed << setprecision(6) << a[i] << " "
+             << "| " << setw(9) << fixed << setprecision(6) << b[i] << " "
+             << "| " << setw(9) << fixed << setprecision(6) << c[i] << " "
+             << "| " << setw(9) << fixed << setprecision(6) << d[i] << " "
+             << "| " << setw(9) << fixed << setprecision(6) << d[i] << " |" << endl;
+
+    }
+    cout << "+-----------+-----------+-----------+-----------+-----------+-----------+" << endl;
+}
 vector<double> calculate_c(const vector<double>& x,const vector<double>& f,const vector<double>& h) {
     int n = (int)x.size();
 
@@ -91,14 +107,15 @@ double splain(const vector<double>& f,const vector<double>& x, double x_star) {
     }
     index--;
 
-    std::cout << "[" << x[index] << "," << x[index + 1] << "]" << std::endl;
-    std::cout << "a: " << a[index] << ", b: " << b[index] << ", c: " << c[index] << ", d: " << d[index] << std::endl;
+    vector<double> result(n);
+    for (int i = 0; i < n; i++) {
+        double delta = (x_star - x[i]);
+        result[i] = a[i] + b[i] * delta + c[i] * pow(delta, 2) + d[i] * pow(delta, 3);
+    }
+    print_table(x, a, b, c, d, result);
 
-    double result;
-    double delta = (x_star - x[index]);
-    result = a[index] + b[index] * delta + c[index] * pow(delta, 2) + d[index] * pow(delta, 3);
-
-    return result;
+    return result.back();
 }
+
 
 #endif //CM_SPLINE_H

@@ -19,5 +19,5 @@ int main () {
     double a = 1.0, b = 2.0;
     double h = 0.1;
 
-    decision(y_0, z_0, a, b, h, d_y, d_z, exact_solution,EULER);
+    decision(y_0, z_0, a, b, h, d_y, d_z, exact_solution,RUNGE_KUTTA);
 }
