@@ -98,32 +98,33 @@ enum Parametr {
 };
 
 double runge_romberg_estimation(const function<double(double)>& f,const double x_0,
-                                const double x_k, const double h, Parametr parametr) {
+                                const double x_k, const double h1, const double h2, Parametr parametr) {
     double I_h;
     double I_h2;
-    double h2 = h / 2;
     int p;
 
     switch (parametr) {
         case RECTANGLE:
-            I_h = rectangle_integration_method(f, x_0, x_k, h);
+            I_h = rectangle_integration_method(f, x_0, x_k, h1);
             I_h2 = rectangle_integration_method(f, x_0, x_k, h2);
             p = 1;
             break;
         case TRAPEZOID:
-            I_h = trapezoid_integration_method(f, x_0, x_k, h);
+            I_h = trapezoid_integration_method(f, x_0, x_k, h1);
             I_h2 = trapezoid_integration_method(f, x_0, x_k, h2);
             p = 2;
             break;
         case SIMPSON:
-            I_h = Simpson_integration_method(f, x_0, x_k, h);
+            I_h = Simpson_integration_method(f, x_0, x_k, h1);
             I_h2 = Simpson_integration_method(f, x_0, x_k, h2);
             p = 4;
             break;
         default:
             return 0;
     }
-    double error_estimation = fabs((I_h2 - I_h) / (pow(2, p) - 1));
+
+    // h1 * k = h2 => k = h2 / h1
+    double error_estimation = I_h2 + fabs((I_h2 - I_h) / (pow(h1 / h2, p) - 1.0));
     return error_estimation;
 }
 
