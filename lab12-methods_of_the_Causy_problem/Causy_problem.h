@@ -43,6 +43,17 @@ public:
 
 };
 
+void euler(double x_0, double y_0, double z_0, double h,
+           const function<double(double, double, double)>& f,
+           const function<double(double, double, double)>& g,
+           double& delta_y_0, double& delta_z_0) {
+
+    double y_05, x_05;
+    y_05 = y_0 + h / 2 * f(x_0, y_0, z_0);
+    x_05 = x_0 + h / 2;
+    delta_y_0 = h * f(x_05, y_05, z_0);
+    delta_z_0 = h * g(x_05, y_05, z_0);
+}
 
 void runge_kutta(double x_0, double y_0, double z_0, double h,
                  const function<double(double, double, double)>& f,
@@ -96,13 +107,10 @@ values calculation_next_value(double x_0, double y_0, double z_0, double h,
                               const vector<values>& prev_values) {
     double delta_y_0 = 0.0;
     double delta_z_0 = 0.0;
-    double y_05, x_05;
+
     switch (_parameter) {
         case EULER:
-            y_05 = y_0 + h / 2 * f(x_0, y_0, z_0);
-            x_05 = x_0 + h / 2;
-            delta_y_0 = h * f(x_05, y_05, z_0);
-            delta_z_0 = h * g(x_05, y_05, z_0);
+            euler(x_0, y_0, z_0, h, f, g, delta_y_0, delta_z_0);
             break;
 
         case RUNGE_KUTTA:
@@ -124,20 +132,23 @@ values calculation_next_value(double x_0, double y_0, double z_0, double h,
 
     return values(x_1, y_1, z_1);
 }
-void print_results(const vector<values>& values_table, const function<double(double)>& exact_solution) {
-    cout << "+-----------+-----------+-----------+-------------------+--------------+" << endl;
-    cout << "|     x     |     y     |     z     |  exact_solution   |    delta     |"  << endl;
-    cout << "+-----------+-----------+-----------+-------------------+--------------+" << endl;
+void print_results(const vector<values>& values_table, const function<double(double)>& exact_solution,const vector<double>& estimation) {
+    cout << "+-----------+-----------+-----------+-------------------+--------------+-------------------+" << endl;
+    cout << "|     x     |     y     |     z     |  exact_solution   |    error     |      estimation   |"  << endl;
+    cout << "+-----------+-----------+-----------+-------------------+--------------+-------------------+" << endl;
 
+    int i = 0;
     for (const auto& v : values_table) {
         cout << "| " << setw(9) << fixed << setprecision(6) << v.get('x') << " "
              << "| " << setw(9) << fixed << setprecision(6) << v.get('y') << " "
              << "| " << setw(9) << fixed << setprecision(6) << v.get('z') << " "
              << "| " << setw(17) << fixed << setprecision(10) << exact_solution(v.get('x')) << " "
-             << "| " << setw(9) << fabs(v.get('y') - exact_solution(v.get('x'))) << " |" << endl;
+             << "| " << setw(9) << fabs(v.get('y') - estimation[i]) << " "
+             << "| " << setw(17) << fixed << setprecision(10) << estimation[i] << " |" << endl;
+        i++;
     }
 
-    cout << "+-----------+-----------+-----------+-------------------+--------------+" << endl;
+    cout << "+-----------+-----------+-----------+-------------------+--------------+-------------------+" << endl;
 }
 
 double decision(double y_0, double z_0, double a, double b, double h, const function<double(double, double, double)>& f,
@@ -146,17 +157,39 @@ double decision(double y_0, double z_0, double a, double b, double h, const func
     vector<values> values_table;
     values v(a, y_0, z_0);
     values_table.push_back(v);
+    vector<double> estimation;
+
+    double p;
+    switch (_parameter) {
+        case EULER:
+            p = 2;
+            break;
+        case RUNGE_KUTTA:
+            p = 4;
+            break;
+        case ADAMS:
+            p = 4;
+            break;
+        default:
+            throw std::runtime_error("Wrong patameter");
+    }
 
     double x_cur;
     do {
         values v_tmp = values_table.back();
         values _values = calculation_next_value(v_tmp.get('x'), v_tmp.get('y'), v_tmp.get('z'), h, f, g, _parameter, values_table);
+        values _values05 = calculation_next_value(v_tmp.get('x'), v_tmp.get('y'), v_tmp.get('z'), h / 2, f, g, _parameter, values_table);
+
+        double cur_estimation;
+        cur_estimation = _values05.get('y') + fabs((_values05.get('y') - _values.get('y')) / (pow(2, p) - 1.0));
+        estimation.push_back(cur_estimation);
         x_cur = _values.get('x');
         values_table.push_back(_values);
     } while (x_cur < b);
 
-    print_results(values_table, exact_solution);
+    print_results(values_table, exact_solution, estimation);
     return 0.0;
 }
+
 
 #endif //CM_CAUSY_PROBLEM_H

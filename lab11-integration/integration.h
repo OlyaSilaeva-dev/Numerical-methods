@@ -98,7 +98,7 @@ enum Parametr {
 };
 
 double runge_romberg_estimation(const function<double(double)>& f,const double x_0,
-                                const double x_k, const double h1, const double h2, Parametr parametr) {
+                                const double x_k, const double h1, const double h2, Parametr parametr, double & error) {
     double I_h;
     double I_h2;
     int p;
@@ -125,6 +125,7 @@ double runge_romberg_estimation(const function<double(double)>& f,const double x
 
     // h1 * k = h2 => k = h2 / h1
     double error_estimation = I_h2 + fabs((I_h2 - I_h) / (pow(h1 / h2, p) - 1.0));
+    error = fabs((I_h2 - I_h) / (pow(h1 / h2, p) - 1.0));
     return error_estimation;
 }
 

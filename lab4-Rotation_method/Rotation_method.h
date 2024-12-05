@@ -124,7 +124,7 @@ void Rotation_method(const matrix &_matrix, vector<double> &eigenvalues, matrix 
     eigenvectors = transpose(compos);
 }
 
-double power_law_method(matrix& _matrix, const vector<double>& y_0) {
+double power_law_method(matrix& _matrix, const vector<double>& y_0, vector<double>& f_result) {
     const double epsilon = 0.1;
     int n = _matrix.get_lines_cnt();
     vector<double> lambda;
@@ -145,6 +145,21 @@ double power_law_method(matrix& _matrix, const vector<double>& y_0) {
         k++;
     } while (abs(lambda[k - 1] - lambda[k - 2]) > epsilon);
 
+    vector<double> eigenvector;
+    for (const vector<double>& k : y.back().get_matrix()) {
+        eigenvector.push_back(k[0]);
+    }
+
+    double norm = 0.0;
+    for (double val : eigenvector) {
+        norm += val * val;
+    }
+    norm = sqrt(norm);
+    for (double & val : eigenvector) {
+        val /= norm;
+    }
+
+    f_result = eigenvector;
     return lambda[k - 1];
 }
 

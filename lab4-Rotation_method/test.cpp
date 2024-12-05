@@ -18,13 +18,19 @@ int main () {
         for (auto v : eigenvectors.get_matrix()[i]) {
             std::cout << v << " ";
         }
-        std::cout << std::endl;
+        std::cout << "\n";
     }
+    std::cout << std::endl;
 
     vector<double> y_0 = {1, 1, 1};
-    double res = power_law_method(_matrix, y_0);
+    vector<double> power_law_method_res;
+    double res = power_law_method(_matrix, y_0, power_law_method_res);
 
-    std::cout << "power_law_method result: " << res << std::endl;
+    std::cout << "power_law_method result: " << res << "\n";
+    std::cout << "vector_power_law_method result: ";
+    for (double k : power_law_method_res) {
+        std::cout << k << " ";
+    }
 
 }
 

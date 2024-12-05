@@ -40,12 +40,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/CMakeFiles/cm_rotation_method_test.dir/test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/CMakeFiles/cm_rotation_method_test.dir/test.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/cm_rotation_method_test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab4-Rotation_method/cm_rotation_method_test.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab11-integration/integration.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab11-integration/integration.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab11-integration/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab11-integration/test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/Causy_problem.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/Causy_problem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab12-methods_of_the_Causy_problem/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h" beforeDir="false" afterPath="$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4-Rotation_method/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab4-Rotation_method/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +125,9 @@
       <recent name="C:\src\GitHub\Numerical-methods\lab1-Progonka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.cm_Causy_problem">
+  <component name="RunManager" selected="CMake Application.cm_rotation_method_test">
     <configuration name="cm" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="cm_4methods_for_nonlinear_equations" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cm" TARGET_NAME="cm_4methods_for_nonlinear_equations" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cm" RUN_TARGET_NAME="cm_4methods_for_nonlinear_equations">
       <method v="2">
@@ -311,6 +309,8 @@
       <workItem from="1732791186401" duration="2449000" />
       <workItem from="1732818198628" duration="9362000" />
       <workItem from="1732979374795" duration="11686000" />
+      <workItem from="1733393576056" duration="3422000" />
+      <workItem from="1733397041558" duration="4491000" />
     </task>
     <servers />
   </component>
@@ -349,11 +349,6 @@
           <url>file://$PROJECT_DIR$/lab6-systems_of_nonlinear_equations/methods.h</url>
           <line>78</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/lab4-Rotation_method/Rotation_method.h</url>
-          <line>124</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
